@@ -6,11 +6,53 @@
     <title>Flexbox Layout</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Importing webfonts */
+        @import url(https://fonts.googleapis.com/css?family=Yeseva+One);
+        @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,700italic,400italic);
+
+        /* CSS reset rules */
+        html, body {
+            height: 100%;
+            min-height: 100%;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            font-family: 'Josefin Sans', serif;
+            color: rgba(0, 0, 0, 0.8);
+            line-height: 1;
+            background-color: #ffccff; /* Light pink background for body */
+        }
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, img, ins, kbd, q, s, samp,
+        small, strike, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
         /* Make the body a flex container with a column layout */
         body {
             display: flex;
             flex-direction: column;
-            margin: 0; /* Remove default margin */
             height: 100vh; /* Full viewport height */
         }
 
@@ -19,16 +61,16 @@
             display: flex;
             flex-direction: row;
             flex: auto; /* Allow main to take available space */
-            border: 2px solid #ffffff; /* Box outline for main */
             margin: 10px; /* Space around the main section */
+            border: 2px solid #ffffff; /* Box outline for main */
         }
 
         /* Article takes ⅔ of the width */
         article {
             flex: 2; /* Use up 2 boxes */
             overflow-y: auto; /* Enable vertical scrolling */
-            padding: 10px; /* Padding for content */
-            background-color: #fbfbfb; /* Light blue background for article */
+            padding: 50px 15px; /* Padding for content */
+            background-color: #fff8e1; /* Light yellow background for article */
             border-right: 1px solid #fffdfd; /* Divider between article and aside */
         }
 
@@ -36,30 +78,101 @@
         aside {
             flex: 1; /* Use up 1 box */
             overflow-y: auto; /* Enable vertical scrolling */
-            padding: 10px; /* Padding for content */
-            background-color: #ffffff; /* Light orange background for aside */
+            padding: 50px 15px; /* Padding for content */
+            background: #FAFAFA; /* Light gray background for aside */
         }
 
         /* Style for header and footer for better visibility */
         header, footer {
-            background-color: #fffcfc; /* Light gray background */
-            padding: 10px; /* Padding for header and footer */
+            background-color: #ffb3d9; /* Light pink background for header/footer */
+            padding: 20px 0; /* Padding for header and footer */
+            height: 80px;
             text-align: center; /* Center the text */
-            border: 2px solid #fffafa; /* Box outline for header and footer */
-            margin: 10px; /* Space around header and footer */
+            border-bottom: 1px solid rgb(221,221,221);
+        }
+
+        /* Logo styles */
+        .logo {
+            font-size: 36px; /* Make the logo bigger */
+            color: #b3006b; /* Dark pink logo color */
+            display: inline-block; /* Allow for proper spacing */
+            margin-right: 10px; /* Space between logo and text */
+            float: left; /* Align logo to the left */
+        }
+
+        /* Clearfix for header */
+        header::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Text styles and margins */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Yeseva One', sans-serif;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin: 30px 0 15px;
+            border-bottom: 2px solid #b3006b; /* Underline for article title */
+            padding-bottom: 5px; /* Space below the title */
+        }
+
+        p {
+            margin-bottom: 15px; /* Space between paragraphs */
+        }
+
+        a {
+            color: #F80002; /* Link color */
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        /* Footer */
+        footer {
+            padding: 5px 15px;
+            height: 80px;
+        }
+
+        /* Media Queries */
+        @media (min-width: 1100px) {
+            body {
+                width: 1100px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 800px) {
+            body.works_on_smartphone {
+                display: block;
+            }
+            body.works_on_smartphone main {
+                display: block;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Content of the &lt;header&gt; tag</h1>
+        <ul>
+            <li class="logo">&starf;</li> <!-- Unicode character as logo -->
+            <li><a href="base_index.html">Home</a></li>
+            <li><a href="tweets.html">Tweets</a></li>
+        </ul>
     </header>
     <main>
         <article>
             <h2>Content of the &lt;article&gt; tag</h2>
+            <p>This is an example of unique content within the article. You can add more paragraphs, images, or any other HTML elements here to make it stand out.</p>
+            <p>Feel free to explore different styles, such as changing colors, backgrounds, or adding borders to enhance the visual appeal.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec orci vel sapien consectetur fringilla.</p>
+            <p>In addition to the above, consider adding multimedia elements such as images, videos, or interactive content to engage your audience further.</p>
+            <p>Don't forget to include links to related articles or resources to provide additional value to your readers.</p>
         </article>
         <aside>
             <h2>Content of the &lt;aside&gt; tag</h2>
+            <p>This section can contain additional information or links that complement the main article.</p>
+            <p style="border-radius: 10px; padding: 20px; border: 1px solid #bbb; background: #ddd; color: black;">Additional sidebar content with some styling.</p>
         </aside>
     </main>
     <footer>
@@ -67,3 +180,4 @@
     </footer>
 </body>
 </html>
+
