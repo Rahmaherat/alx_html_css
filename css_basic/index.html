@@ -7,11 +7,158 @@
     <link href="base.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <style>
-        /* Ensure html and body take up the full height of the viewport */
+        /* Importing webfonts */
+        @import url(https://fonts.googleapis.com/css?family=Yeseva+One);
+        @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,700italic,400italic);
+
+        /* CSS reset rules */
         html, body {
             height: 100%;
             min-height: 100%;
             margin: 0; /* Remove default margin */
+            line-height: 1;
+            font-family: 'Josefin Sans', serif;
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, img, ins, kbd, q, s, samp,
+        small, strike, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        /* Main styles */
+        main {
+            display: flex;
+            flex-direction: row;
+            flex: auto; /* Allow main to take available space */
+            margin: 10px; /* Space around the main section */
+        }
+
+        article {
+            flex: 2; /* Use up 2 boxes */
+            padding: 20px; /* Adjusted padding for mobile */
+            background-color: #fff8e1; /* Light yellow background for article */
+            border-right: 1px solid #fffdfd; /* Divider between article and aside */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+
+        aside {
+            flex: 1; /* Use up 1 box */
+            padding: 20px; /* Adjusted padding for mobile */
+            background: #FAFAFA; /* Light gray background for aside */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+
+        /* Header */
+        header {
+            border-bottom: 1px solid rgb(221,221,221);
+            padding: 20px 0;
+            height: auto; /* Adjusted height */
+            text-align: center; /* Center the text */
+        }
+        header ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        header li {
+            display: inline;
+            vertical-align: middle;
+        }
+        header li a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Footer */
+        footer {
+            padding: 5px 15px;
+            height: auto; /* Adjusted height */
+            text-align: center; /* Center the text */
+        }
+
+        /* Text styles and margins */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Yeseva One', sans-serif;
+        }
+
+        h1 {
+            font-size: 28px; /* Adjusted font size for mobile */
+            margin: 20px 0; /* Adjusted margin */
+        }
+
+        h2 {
+            font-size: 24px; /* Adjusted font size for mobile */
+            margin: 20px 0; /* Adjusted margin */
+        }
+
+        p {
+            margin-bottom: 15px; /* Space between paragraphs */
+        }
+
+        /* Media Queries */
+        @media (min-width: 1100px) {
+            body {
+                width: 1100px;
+                margin: 0 auto;
+            }
+
+            article {
+                padding: 50px 15px; /* Increase padding for larger screens */
+            }
+
+            aside {
+                padding: 50px 15px; /* Increase padding for larger screens */
+            }
+
+            h1 {
+                font-size: 36px; /* Original font size for larger screens */
+            }
+
+            h2 {
+                font-size: 32px; /* Original font size for larger screens */
+            }
+        }
+
+        @media (max-width: 800px) {
+            body.works_on_smartphone {
+                display: block;
+            }
+            header .right {
+                float: none;
+            }
+
+            main {
+                flex-direction: column; /* Stack articles and aside on small screens */
+            }
+
+            aside {
+                border-top: 1px solid #ddd; /* Optional: add a border between sections */
+                margin-top: 10px; /* Add margin for spacing */
+            }
         }
     </style>
 </head>
@@ -22,18 +169,18 @@
             <li><a href="tweets.html">Tweets</a></li>
         </ul>
     </header>
-    <p>One Paragraph</p>
-    <p>Two Paragraph</p>
-    <p>Three Paragraph</p>
-    <p>Four Paragraph</p>
-    <h1>Head One</h1>
-    <h2>Head Two</h2>
-    <h3>Head Three</h3>
-    <h4>Head Four</h4>
-    <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo">
-    <a href="tweets.html">View Tweets</a>
     <main>
         <article>
+            <h1>Head One</h1>
+            <h2>Head Two</h2>
+            <h3>Head Three</h3>
+            <h4>Head Four</h4>
+            <p>One Paragraph</p>
+            <p>Two Paragraph</p>
+            <p>Three Paragraph</p>
+            <p>Four Paragraph</p>
+            <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo">
+            <a href="tweets.html">View Tweets</a>
             <blockquote class="twitter-tweet">
                 <p lang="en" dir="ltr">
                     It’s d-day! <br><br>
@@ -48,43 +195,34 @@
                 &mdash; ALX (@alx_africa) <a href="https://twitter.com/alx_africa/status/1834185497565876569?ref_src=twsrc%5Etfw">September 12, 2024</a>
             </blockquote>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo">
             <table>
                 <thead>
                     <tr>
-                         <del> <th>Name</th>
+                        <th>Name</th>
                         <th>Age</th>
-                        <th>Country</th></del>
+                        <th>Country</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <del>
                         <td>John</td>
                         <td>25</td>
                         <td>USA</td>
-                        </del>
                     </tr>
                     <tr>
-                        <del>
                         <td>Emily</td>
                         <td>28</td>
                         <td>Canada</td>
-                        </del>
                     </tr>
                     <tr>
-                        <del>
                         <td>Michael</td>
                         <td>32</td>
                         <td>Australia</td>
-                        </del>
                     </tr>
                     <tr>
-                        <del>
                         <td>Sophia</td>
                         <td>21</td>
                         <td>UK</td>
-                        </del>
                     </tr>
                 </tbody>
             </table>
