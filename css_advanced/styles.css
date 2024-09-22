@@ -1,6 +1,12 @@
+
 body {
-    margin: 0;
-    padding: 0;
+    html, body {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    height: auto; /* Allow height to expand */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 }
 
 .header {
@@ -308,6 +314,7 @@ body {
     width: 1440px; /* Set width */
     height: 1093px; /* Set height */
     overflow: hidden; /* Prevent overflow */
+    padding: 20px; /* Add padding for content spacing */
 }
 
 .main-image {
@@ -383,7 +390,7 @@ body {
 }
 .text-learn {
     position: absolute; /* Allow positioning */
-    top: 600px; /* Adjust based on your design */
+    top: 550px; /* Adjust based on your design */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Offset to center the text */
     font-family: 'Source Sans Pro', sans-serif; /* Font family */
@@ -409,7 +416,7 @@ body {
     position: absolute; /* Position relative to the parent */
     width: 1009px; /* Set width */
     height: 237px; /* Set height */
-    top: 700px; /* Adjust as needed */
+    top: 660px; /* Adjust as needed */
     left: 217px; /* Adjust as needed */
     display: flex; /* Use flexbox for alignment */
     gap: 0; /* No gap between items */
@@ -450,5 +457,115 @@ body {
     font-size: 17.50px; /* Font size */
     text-align: center; /* Center the text */
     width: 150; /* Font weight */
+}
+html, body {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    height: 100%; /* Set height to 100% for full screen */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.main-section {
+    padding: 20px; /* Add padding for content spacing */
+    display: flex; /* Allow for flexible layouts */
+    flex-direction: column; /* Stack sections vertically */
+}
+.testimonial-section {
+    width: 943px; /* Set desired width */
+    margin: 20px auto; /* Center the testimonial section */
+}
+
+section {
+    min-height: 100vh; /* Ensure each section takes at least the full viewport height */
+    display: flex; /* Enable flexbox for section content */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    margin-bottom: 40px; /* Space between sections */
+}
+
+/* Optional: Add styles for text and buttons */
+h1, h2, h3 {
+    color: #FFF; /* Example color */
+    text-align: center; /* Center text */
+}
+
+button {
+    padding: 10px 20px; /* Add padding to buttons */
+    background-color: #FFF; /* Button color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor */
+}
+html, body {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    height: 100%; /* Set height to 100% for full screen */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.main-section {
+    position: relative; /* Allow for absolute positioning of the background */
+    z-index: 2; /* Ensure main section is above the background */
+}
+
+.background-section {
+    width: 1440px; /* Full width of the viewport */
+    height: 392px; /* Fixed height */
+    position: absolute; /* Positioned under the main section */
+    top: 900px; /* Adjust as necessary to position under the main content */
+    left: 0; /* Align to the left */
+    background: #C271FF; /* Background color */
+    opacity: 1; /* Ensure visibility */
+    z-index: 1; /* Ensure it is below the main section */
+}
+.main-image-5 {
+    position: absolute; /* Positioning the image absolutely */
+    top: 940px; /* Adjust as necessary to position above the background */
+    left: 20%; /* Center horizontally */
+    transform: translateX(-50%); /* Center adjustment */
+    width: 160px; /* Fixed width */
+    height: 160px; /* Fixed height */
+    object-fit: cover; /* Ensure the image covers the area */
+    z-index: 2; /* Ensure it's above the background */
+}
+.testimonial-text {
+    position: absolute; /* Position the blockquote */
+    top: 950px; /* Adjust this value to position the blockquote */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    width: 730px; /* Fixed width */
+    font-family: 'Source Sans Pro', sans-serif; /* Font family */
+    font-size: 22px; /* Font size */
+    font-weight: 400; /* Font weight */
+    line-height: 33.6px; /* Line height */
+    text-align: center; /* Center text */
+    color: #FFFFFF; /* Text color */
+    margin: 0; /* No margin */
+    z-index: 2; /* Ensure it is above the background */
+}
+.testimonial-name {
+    position: absolute; /* Position the name */
+    top: 1020px; /* Adjust this value for positioning */
+    left: 33%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    font-family: 'Source Sans Pro', sans-serif; /* Font family */
+    font-size: 22px; /* Font size */
+    font-weight: 700; /* Font weight */
+    color: #FFFFFF; /* Text color */
+    margin-right:  50px; /*  margin */
+    z-index: 2; /* Ensure it is above the background */
+    padding-right: 50px;
+}
+.testimonial-p {
+    position: absolute; /* Position the subtitle */
+    top: 1070px; /* Adjust this value for positioning */
+    left: 31.5%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    font-family: 'Source Sans Pro', sans-serif; /* Font family */
+    font-size: 18px; /* Font size */
+    font-weight: 400; /* Font weight */
+    color: #FFFFFF; /* Text color */
+    margin: 0; /* No margin */
+    z-index: 2; /* Ensure it is above the background */
 }
 
