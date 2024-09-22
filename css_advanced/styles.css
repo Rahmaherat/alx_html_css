@@ -1,1 +1,454 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 1103.41px;
+    height: 29.46px; /* Adjust as needed */
+    position: relative; /* For absolute positioning of child elements */
+    gap: 0 ; /* No gap between items For absolute positioning of child elements */
+    top: 35.02px; /* Position from the top */
+    left: 171.59px; /* Position from the left */
+    padding: 0;
+    opacity: 1; /* Set to 1 for visibility */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.nav {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    gap: 0; /* No gap between items */
+}
+
+.nav img {
+    /* Optional styles for the logo */
+    max-height: 100%; /* Adjust as needed */
+}
+
+.menu {
+    display: flex; /* Use flex for the menu */
+    gap: 0 ; /* No gap between items */
+    margin-left: 400px; /* Push menu items to the right */
+}
+
+.menu-item {
+    width: 234px; /* Width for the menu */
+    height: 15px; /* Height for the menu */
+    opacity: 1; /* Set to 1 for visibility */
+    display: inline-block; /* Use flexbox for alignment */
+    gap: 0 ; /* No gap between items */
+    align-items: center; /* Center text vertically */
+    padding: 0; /* No padding for the menu item itself */
+    
+}
+
+.menu-item a {
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif; /* Use the specified font */
+    font-size: 12px; /* Font size */
+    font-weight: 700; /* Font weight */
+    line-height: 15.08px; /* Line height */
+    text-align: left; /* Left-align text */
+    display: block; /* Makes the link fill the li */
+    padding: 25px 20px ; /* No padding */
+    float: right;
+    position: relative;
+    color: #ffffff; /* text color */
+    opacity: 1; /* Set to 1 for visibility */
+    column-gap: 0; /* No gap between items */
+
+}
+
+/* Specific styles for each menu item */
+.menu-item:nth-child(1) a {
+    width: 50px; /* Width for COURSE */
+    height: 15px; /* Height for COURSE */
+}
+
+.menu-item:nth-child(2) a {
+    width: 45px; /* Width for PRICING */
+    height: 15px; /* Height for PRICING */
+}
+
+.menu-item:nth-child(3) a {
+    width: 34px; /* Width for LOGIN */
+    height: 15px; /* Height for LOGIN */
+}
+.logo {
+    width: 167.02px; /* Set the width */
+    height: 29.46px; /* Set the height */
+    position: relative; /* Allows for positioning */
+    top: 30px; /* Position from the top */
+    left: 135px; /* Position from the left */
+    opacity: 1; /* Set to 1 for visibility */
+    margin-left: 50px; /* Add space between logo and menu */
+    float: left;
+    display: inline-flex; /* Use flexbox for alignment */
+    align-items: flex-end; /* flex-end text vertically */
+}
+.main-section {
+    width: 1440px; /* Set the width */
+    height: 1093px; /* Set the height */
+    position: relative; /* Positioning for absolute children */
+    background-color: #f0f0f0; /* Set a background color if needed */
+    overflow: hidden; /* Prevent overflow */
+    gap: 0; /* No gap between sections */
+    opacity: 1; /* Set to 1 for visibility */
+}
+
+.main-image {
+    position: absolute; /* Absolute positioning */
+    width: 1448.15px; /* Set width */
+    height: 1055px; /* Set height */
+    top: -66px; /* Position from the top */
+    left: -4.08px; /* Position from the left */
+    opacity: 1; /* Set to 1 for visibility */
+    object-fit: cover; /* Ensure the image covers its area */
+}
+.header {
+    position: absolute; /* Positioning */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    z-index: 10; /* Ensure it appears above the image */
+    background-color: /* Optional transparent background */
+}
+
+.nav {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space out logo and menu */
+    align-items: center; /* Center vertically */
+    padding: 10px; /* Padding for better spacing */
+}
+
+.logo {
+    width: 167.02px; /* Set logo width */
+    height: 29.46px; /* Set logo height */
+    margin-left: 50px; /* Add space between logo and menu */
+    
+}
+
+.menu {
+    display: flex; /* Horizontal layout for menu items */
+    gap: 20px; /* Space between items */
+}
+
+.menu-item a {
+    text-decoration: none; /* Remove underline from links */
+    font-family: 'Source Sans Pro', sans-serif; /* Set font */
+    font-size: 12px; /* Font size */
+    font-weight: 700; /* Font weight */
+    color: #ffffff; /* Text color */
+    opacity: 1; /* Fully visible */
+}
+
+.main-section {
+    position: relative; /* Ensure positioning for absolute children */
+    width: 1440px; /* Set width */
+    height: 1093px; /* Set height */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.main-image {
+    position: absolute; /* Absolute positioning */
+    width: 1448.15px; /* Set width */
+    height: 1055px; /* Set height */
+    top: -66px; /* Position from the top */
+    left: -4.08px; /* Position from the left */
+    object-fit: cover; /* Ensure the image covers its area */
+    opacity: 1; /* Set to 1 for visibility */
+}
+.main-section {
+    position: relative; /* Allows for absolute positioning of children */
+    width: 1440px; /* Set your desired width */
+    height: 1093px; /* Set your desired height */
+}
+
+.text-overlay {
+    position: absolute; /* Position it absolutely within the main section */
+    top: 220px; /* Position from the top */
+    left: 377px; /* Position from the left */
+    width: 684px; /* Set width */
+    height: 151px; /* Set height */
+    opacity: 1; /* Set to 1 for visibility */
+    text-align: center; /* Center text */
+    color: #ffffff00; /* Optional background */
+    z-index: 2; /* Higher z-index to appear above the image */
+}
+
+.text-overlay h1 {
+    font-family: 'Source Sans Pro', sans-serif; /* Set font */
+    font-size: 120px; /* Font size */
+    font-weight: 700; /* Font weight */
+    line-height: 150.84px; /* Line height */
+    margin: 0; /* Remove default margins */
+    z-index: 2; /* Higher z-index to appear above the image */
+    display: block; /* Each on a new line */
+    margin-top: 10px; /* Space between elements */
+}
+.main-image {
+    position: absolute; /* Absolute positioning */
+    width: 1448.15px; /* Set width */
+    height: 1055px; /* Set height */
+    top: -66px; /* Adjust as needed */
+    left: -4.08px; /* Adjust as needed */
+    object-fit: cover; /* Cover the area */
+    opacity: 1; /* Set to 1 for visibility */
+    z-index: 1; /* Set z-index to layer beneath the text */
+}
+.main-section {
+    position: relative; /* Enable absolute positioning for children */
+    width: 1440px; /* Desired width */
+    height: 1093px; /* Desired height */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.main-image {
+    width: 100%; /* Full width to fit the container */
+    height: auto; /* Maintain aspect ratio */
+    position: relative; /* Normal flow */
+    z-index: 1; /* Layer beneath the text */
+}
+
+.text-overlay {
+    position: absolute; /* Position it on top of the image */
+    top: 220px; /* Position from the top */
+    left: 377px; /* Position from the left */
+    width: 684px; /* Set width */
+    height: 151px; /* Set height */
+    text-align: center; /* Center text */
+    font-family: 'Source Sans Pro', sans-serif; /* Set font */
+    font-size: 120px; /* Font size */
+    font-weight: 700; /* Font weight */
+    line-height: 150.84px; /* Line height */
+    color: #FFFFFF; /* Text color */
+    opacity: 1; /* Fully visible */
+    z-index: 2; /* Higher z-index to appear above the image */
+    margin: 0; /* Remove default margin */
+}
+.main-section {
+    position: relative; /* Allow absolute positioning of children */
+    width: 1440px; /* Set width */
+    height: 1093px; /* Set height */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.main-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position the image */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+}
+
+.register-button {
+    width: 162px; /* Set width */
+    height: 44px; /* Set height */
+    position: absolute; /* Allow positioning */
+    top: 419px; /* Position from the top */
+    left: 639px; /* Position from the left */
+    background-color: #C271FF; /* Button background color */
+    color: #FFFFFF; /* Text color */
+    font-family: 'Source Sans Pro', sans-serif; /* Font family */
+    font-size: 12px; /* Font size */
+    font-weight: 700; /* Font weight */
+    border: none; /* Remove default border */
+    border-radius: 22px; /* Rounded corners (optional) */
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5); /* Box shadow */
+    opacity: 1; /* Fully visible */
+    cursor: pointer; /* Change cursor on hover */
+    z-index: 10; /* Ensure it appears above the image */
+}
+
+/* Optional: Hover effect */
+.register-button:hover {
+    background-color: #C271FF; /* Darker shade on hover (adjust as needed) */
+
+}
+.main-section {
+    position: relative; /* Allow absolute positioning of children */
+    width: 1440px; /* Set width */
+    height: 1093px; /* Set height */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.main-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position the image */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+}
+
+.text-overlay {
+    width: 684px; /* Set width */
+    height: 151px; /* Set height */
+    position: absolute; /* Allow positioning */
+    top: 220px; /* Position from the top */
+    left: 377px; /* Position from the left */
+    font-family: 'Source Sans Pro', sans-serif; /* Font family */
+    font-size: 100px; /* Font size */
+    font-weight: 700; /* Font weight */
+    line-height: 150.84px; /* Line height */
+    text-align: center; /* Center the text */
+    color: #FFFFFF; /* Text color */
+    opacity: 1; /* Fully visible */
+    z-index: 10; /* Ensure it appears above the image */
+}
+
+/* Optional: Adjust for hover or focus states if needed */
+.text-overlay:hover {
+    /* Example hover effect */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Light glow effect */
+}
+.main-section {
+    position: relative; /* Allow absolute positioning of children */
+    width: 1440px; /* Set width */
+    height: 1093px; /* Set height */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.main-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position the image */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+}
+
+.text-smiles {
+    width: 52px; /* Set width */
+    height: 20px; /* Set height */
+    position: absolute; /* Allow positioning */
+    top: 361px; /* Position from the top */
+    left: 593px; /* Position from the left */
+    font-family: 'Source Sans Pro', sans-serif; /* Font family */
+    font-size: 16px; /* Font size */
+    font-weight: 700; /* Font weight */
+    line-height: 20.11px; /* Line height */
+    text-align: center; /* Center the text */
+    color: #FFFFFF; /* Text color */
+    opacity: 1; /* Fully visible */
+    z-index: 10; /* Ensure it appears above the image */
+}
+
+/* Optional: Adjust for hover or focus states if needed */
+.text-smiles:hover {
+    /* Example hover effect */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Light glow effect */
+}
+.text-grin {
+    width: 36px; /* Set width */
+    height: 20px; /* Set height */
+    position: absolute; /* Allow positioning */
+    top: 361px; /* Position from the top */
+    left: 704px; /* Position from the left */
+    font-family: 'Source Sans Pro', sans-serif; /* Font family */
+    font-size: 16px; /* Font size */
+    font-weight: 700; /* Font weight */
+    line-height: 20.11px; /* Line height */
+    text-align: center; /* Center the text */
+    color: #FFFFFF; /* Text color */
+    opacity: 1; /* Fully visible */
+    z-index: 10; /* Ensure it appears above the image */
+}
+
+/* Optional: Adjust for hover or focus states if needed */
+.text-grin:hover {
+    /* Example hover effect */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Light glow effect */
+}
+.text-laugh {
+    width: 49px; /* Set width */
+    height: 20px; /* Set height */
+    position: absolute; /* Allow positioning */
+    top: 361px; /* Position from the top */
+    left: 797px; /* Position from the left */
+    font-family: 'Source Sans Pro', sans-serif; /* Font family */
+    font-size: 16px; /* Font size */
+    font-weight: 700; /* Font weight */
+    line-height: 20.11px; /* Line height */
+    text-align: center; /* Center the text */
+    color: #FFFFFF; /* Text color */
+    opacity: 1; /* Fully visible */
+    z-index: 10; /* Ensure it appears above the image */
+}
+
+/* Optional: Adjust for hover or focus states if needed */
+.text-laugh:hover {
+    /* Example hover effect */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Light glow effect */
+}
+.text-learn {
+    position: absolute; /* Allow positioning */
+    top: 600px; /* Adjust based on your design */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Offset to center the text */
+    font-family: 'Source Sans Pro', sans-serif; /* Font family */
+    font-size: 32px; /* Font size */
+    font-weight: 700; /* Font weight */
+    line-height: 40.22px; /* Line height */
+    text-align: center; /* Center the text */
+    z-index: 10; /* Ensure it appears above the image */
+}
+.text-learn-main {
+    color: #C271FF; /* Color for "Learn" */
+    font-weight: 700; /* Font weight for "Learn" */
+}
+
+.text-learn-pros {
+    color: #ffffff; /* Color for "from the pros" */
+    font-weight: 300; /* Lighter weight for "from the pros" */
+}
+.text-pros {
+    font-weight: 300; /* Lighter weight for "from the pros" */
+}
+.overlay-container {
+    position: absolute; /* Position relative to the parent */
+    width: 1009px; /* Set width */
+    height: 237px; /* Set height */
+    top: 700px; /* Adjust as needed */
+    left: 217px; /* Adjust as needed */
+    display: flex; /* Use flexbox for alignment */
+    gap: 0; /* No gap between items */
+    opacity: 1; /* Fully visible */
+    z-index: 10; /* Ensure it appears above the main image */
+}
+
+.profile {
+    display: flex; /* Flexbox for profile layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+}
+
+.profile img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+.profile-bruce img,
+.profile img {
+    width: 150px; /* Set width */
+    height: 150px; /* Set height */
+    object-fit: cover; /* Ensure the image fits well */
+    border-radius: 80px; /* Optional: rounded corners */
+    opacity: 1; /* Fully visible */
+}
+
+.profile h3 {
+    margin: 5px 0; /* Spacing between elements */
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro',bold; /* Font family */
+}
+
+.profile p {
+    margin: 0; /* Remove default margin */
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro', italic; /* Font family */
+    font-size: 17.50px; /* Font size */
+    text-align: center; /* Center the text */
+    width: 150; /* Font weight */
+}
 
