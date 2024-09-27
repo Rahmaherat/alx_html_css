@@ -1,571 +1,1621 @@
+@import url(base.css);
+@import url(layout.css);
+@import url(modfules.css);
+:root {
+    --maincolor: #C271FF;
+    --darkcolor: #071629;
+    --textcolor: #FFFFFF;
+    --wightcolor: #C271FF;
+    --mainfont:  'Source Sans Pro', sans-serif;
 
-body {
-    html, body {
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
-    height: auto; /* Allow height to expand */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    ;
+    --
 }
-
-}
-
-.header {
-    width: 1103.41px;
-    height: 29.46px; /* Adjust as needed */
-    position: relative; /* For absolute positioning of child elements */
-    gap: 0 ; /* No gap between items For absolute positioning of child elements */
-    top: 35.02px; /* Position from the top */
-    left: 171.59px; /* Position from the left */
+* {
+    margin: 0;
     padding: 0;
-    opacity: 1; /* Set to 1 for visibility */
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
+    box-sizing: border-box;
 }
+body{
+    font-family: var(--mainfont)
 
-.nav {
-    display: flex;
-    align-items: center; /* Center items vertically */
-    gap: 0; /* No gap between items */
 }
-
-.nav img {
-    /* Optional styles for the logo */
-    max-height: 100%; /* Adjust as needed */
-}
-
-.menu {
-    display: flex; /* Use flex for the menu */
-    gap: 0 ; /* No gap between items */
-    margin-left: 400px; /* Push menu items to the right */
-}
-
-.menu-item {
-    width: 234px; /* Width for the menu */
-    height: 15px; /* Height for the menu */
-    opacity: 1; /* Set to 1 for visibility */
-    display: inline-block; /* Use flexbox for alignment */
-    gap: 0 ; /* No gap between items */
-    align-items: center; /* Center text vertically */
-    padding: 0; /* No padding for the menu item itself */
-    
-}
-
-.menu-item a {
+a {
     text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif; /* Use the specified font */
-    font-size: 12px; /* Font size */
-    font-weight: 700; /* Font weight */
-    line-height: 15.08px; /* Line height */
-    text-align: left; /* Left-align text */
-    display: block; /* Makes the link fill the li */
-    padding: 25px 20px ; /* No padding */
-    float: right;
-    position: relative;
-    color: #ffffff; /* text color */
-    opacity: 1; /* Set to 1 for visibility */
-    column-gap: 0; /* No gap between items */
+    
+                                                
+}
+.start{
+    width: 1440px;
+    margin: auto;
+    height: 1093px;
+    gap: 0px;
+    opacity: 1; /* Ensure visibility */
+    position: absolute; /* Use absolute positioning for centering */
+    z-index: 2; /* Higher z-index to appear above the image */
+  
+}
+.header-menu {
+    border: 1px solid red;
+    width: 100%;
+    max-width:  1103.41px;
+    height: 29.46px;
+     top: 35.02px;
+    left: 171.59px;
+    padding: 0px;
+    margin: auto;
+    gap: 0px;
+   opacity: 0px;
+   flex-basis: 100%;
+   z-index: 2; /* Higher z-index to appear above the image */
 
 }
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
 
-/* Specific styles for each menu item */
-.menu-item:nth-child(1) a {
+}
+.header-menu-navbar {
+    display: flex; /* Makes sure items inside nav are in a row */
+    align-items: center; /* Vertically centers items */
+    justify-content: space-between; /* Distributes space between logo and menu items */
+    width: 100%;
+    z-index: 2; /* Higher z-index to appear above the image */
+}
+
+.logo{
+width: 167.02px;
+height: 29.46px;
+top: 35.02px;
+left: 171.59px;
+gap: 0px;
+opacity: 0px;
+z-index: 2; /* Higher z-index to appear above the image */
+}
+
+.header-list {
+    list-style: none; /* Removes bullet points */
+    display: flex; /* Aligns list items in a row */
+    gap: 30px; /* Space between menu items */
+    margin: 0; /* Resets default margin */
+    padding: 0; /* Resets default padding */
+    z-index: 2; /* Higher z-index to appear above the image */
+}
+/* Specific styles for each header-list */
+.COURSE {
     width: 50px; /* Width for COURSE */
     height: 15px; /* Height for COURSE */
+    color: #ffffff;
 }
 
-.menu-item:nth-child(2) a {
+.PRICING {
     width: 45px; /* Width for PRICING */
     height: 15px; /* Height for PRICING */
+    color: #ffffff;
 }
 
-.menu-item:nth-child(3) a {
+.LOGIN {
     width: 34px; /* Width for LOGIN */
     height: 15px; /* Height for LOGIN */
+    color: #ffffff;
 }
-.logo {
-    width: 167.02px; /* Set the width */
-    height: 29.46px; /* Set the height */
-    position: relative; /* Allows for positioning */
-    top: 30px; /* Position from the top */
-    left: 135px; /* Position from the left */
-    opacity: 1; /* Set to 1 for visibility */
-    margin-left: 50px; /* Add space between logo and menu */
-    float: left;
-    display: inline-flex; /* Use flexbox for alignment */
-    align-items: flex-end; /* flex-end text vertically */
-}
-.main-section {
-    width: 1440px; /* Set the width */
-    height: 1093px; /* Set the height */
-    position: relative; /* Positioning for absolute children */
-    background-color: #f0f0f0; /* Set a background color if needed */
-    overflow: hidden; /* Prevent overflow */
-    gap: 0; /* No gap between sections */
-    opacity: 1; /* Set to 1 for visibility */
-}
-
-.main-image {
-    position: absolute; /* Absolute positioning */
-    width: 1448.15px; /* Set width */
-    height: 1055px; /* Set height */
-    top: -66px; /* Position from the top */
-    left: -4.08px; /* Position from the left */
-    opacity: 1; /* Set to 1 for visibility */
-    object-fit: cover; /* Ensure the image covers its area */
-}
-.header {
-    position: absolute; /* Positioning */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-    width: 100%; /* Full width */
-    z-index: 10; /* Ensure it appears above the image */
-    background-color: /* Optional transparent background */
-}
-
-.nav {
-    display: flex; /* Flexbox for alignment */
-    justify-content: space-between; /* Space out logo and menu */
-    align-items: center; /* Center vertically */
-    padding: 10px; /* Padding for better spacing */
-}
-
-.logo {
-    width: 167.02px; /* Set logo width */
-    height: 29.46px; /* Set logo height */
-    margin-left: 50px; /* Add space between logo and menu */
-    
-}
-
-.menu {
-    display: flex; /* Horizontal layout for menu items */
-    gap: 20px; /* Space between items */
-}
-
-.menu-item a {
-    text-decoration: none; /* Remove underline from links */
-    font-family: 'Source Sans Pro', sans-serif; /* Set font */
-    font-size: 12px; /* Font size */
-    font-weight: 700; /* Font weight */
+.Get {
+    width: 684px; /* Fixed width */
+    height: 151px; /* Fixed height */
+    top: 25%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for width and height */
+    opacity: 1; /* Ensure visibility */
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 150.84px; /* Adjust line height as needed */
+    text-align: center; /* Center text within the div */
     color: #ffffff; /* Text color */
-    opacity: 1; /* Fully visible */
-}
-
-.main-section {
-    position: relative; /* Ensure positioning for absolute children */
-    width: 1440px; /* Set width */
-    height: 1093px; /* Set height */
-    overflow: hidden; /* Prevent overflow */
-}
-
-.main-image {
-    position: absolute; /* Absolute positioning */
-    width: 1448.15px; /* Set width */
-    height: 1055px; /* Set height */
-    top: -66px; /* Position from the top */
-    left: -4.08px; /* Position from the left */
-    object-fit: cover; /* Ensure the image covers its area */
-    opacity: 1; /* Set to 1 for visibility */
-}
-.main-section {
-    position: relative; /* Allows for absolute positioning of children */
-    width: 1440px; /* Set your desired width */
-    height: 1093px; /* Set your desired height */
-}
-
-.text-overlay {
-    position: absolute; /* Position it absolutely within the main section */
-    top: 220px; /* Position from the top */
-    left: 377px; /* Position from the left */
-    width: 684px; /* Set width */
-    height: 151px; /* Set height */
-    opacity: 1; /* Set to 1 for visibility */
-    text-align: center; /* Center text */
-    color: #ffffff00; /* Optional background */
-    z-index: 2; /* Higher z-index to appear above the image */
-}
-
-.text-overlay h1 {
-    font-family: 'Source Sans Pro', sans-serif; /* Set font */
-    font-size: 120px; /* Font size */
-    font-weight: 700; /* Font weight */
-    line-height: 150.84px; /* Line height */
     margin: 0; /* Remove default margins */
-    z-index: 2; /* Higher z-index to appear above the image */
     display: block; /* Each on a new line */
     margin-top: 10px; /* Space between elements */
-}
-.main-image {
-    position: absolute; /* Absolute positioning */
-    width: 1448.15px; /* Set width */
-    height: 1055px; /* Set height */
-    top: -66px; /* Adjust as needed */
-    left: -4.08px; /* Adjust as needed */
-    object-fit: cover; /* Cover the area */
-    opacity: 1; /* Set to 1 for visibility */
-    z-index: 1; /* Set z-index to layer beneath the text */
-}
-.main-section {
-    position: relative; /* Enable absolute positioning for children */
-    width: 1440px; /* Desired width */
-    height: 1093px; /* Desired height */
-    overflow: hidden; /* Prevent overflow */
-}
-
-.main-image {
-    width: 100%; /* Full width to fit the container */
-    height: auto; /* Maintain aspect ratio */
-    position: relative; /* Normal flow */
-    z-index: 1; /* Layer beneath the text */
-}
-
-.text-overlay {
-    position: absolute; /* Position it on top of the image */
-    top: 220px; /* Position from the top */
-    left: 377px; /* Position from the left */
-    width: 684px; /* Set width */
-    height: 151px; /* Set height */
-    text-align: center; /* Center text */
-    font-family: 'Source Sans Pro', sans-serif; /* Set font */
-    font-size: 120px; /* Font size */
-    font-weight: 700; /* Font weight */
-    line-height: 150.84px; /* Line height */
-    color: #FFFFFF; /* Text color */
-    opacity: 1; /* Fully visible */
+    position: absolute; /* Use absolute positioning for centering */
     z-index: 2; /* Higher z-index to appear above the image */
-    margin: 0; /* Remove default margin */
 }
-.main-section {
-    position: relative; /* Allow absolute positioning of children */
-    width: 1440px; /* Set width */
-    height: 1093px; /* Set height */
-    overflow: hidden; /* Prevent overflow */
-}
+.SMILES{
+    width: 49px;
+height: 20px;
+top: 335px;/* Center vertically */
+left: 597px;/* Center horizontally */
+gap: 0px;
+transform: translate(-50%, -50%); /* Adjust for width and height */
+opacity: 1; /* Ensure visibility */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 16px;
+font-weight: 700;
+line-height: 20.11px; /* Adjust line height as needed */
+text-align: center;
+color: #ffffff; /* Text color */
+margin: 0; /* Remove default margins */
+display: block; /* Each on a new line */
+margin-top: 10px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+z-index: 2; /* Higher z-index to appear above the image */
 
-.main-image {
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
-    position: absolute; /* Position the image */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-}
 
-.register-button {
-    width: 162px; /* Set width */
-    height: 44px; /* Set height */
-    position: absolute; /* Allow positioning */
-    top: 419px; /* Position from the top */
-    left: 639px; /* Position from the left */
-    background-color: #C271FF; /* Button background color */
-    color: #FFFFFF; /* Text color */
-    font-family: 'Source Sans Pro', sans-serif; /* Font family */
-    font-size: 12px; /* Font size */
-    font-weight: 700; /* Font weight */
-    border: none; /* Remove default border */
-    border-radius: 22px; /* Rounded corners (optional) */
-    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5); /* Box shadow */
-    opacity: 1; /* Fully visible */
-    cursor: pointer; /* Change cursor on hover */
-    z-index: 10; /* Ensure it appears above the image */
-}
-
-/* Optional: Hover effect */
-.register-button:hover {
-    background-color: #C271FF; /* Darker shade on hover (adjust as needed) */
 
 }
-.main-section {
-    position: relative; /* Allow absolute positioning of children */
-    width: 1440px; /* Set width */
-    height: 1093px; /* Set height */
-    overflow: hidden; /* Prevent overflow */
-}
-
-.main-image {
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
-    position: absolute; /* Position the image */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-}
-
-.text-overlay {
-    width: 684px; /* Set width */
-    height: 151px; /* Set height */
-    position: absolute; /* Allow positioning */
-    top: 220px; /* Position from the top */
-    left: 377px; /* Position from the left */
-    font-family: 'Source Sans Pro', sans-serif; /* Font family */
-    font-size: 100px; /* Font size */
-    font-weight: 700; /* Font weight */
-    line-height: 150.84px; /* Line height */
-    text-align: center; /* Center the text */
-    color: #FFFFFF; /* Text color */
-    opacity: 1; /* Fully visible */
-    z-index: 10; /* Ensure it appears above the image */
-}
-
-/* Optional: Adjust for hover or focus states if needed */
-.text-overlay:hover {
-    /* Example hover effect */
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Light glow effect */
-}
-.main-section {
-    position: relative; /* Allow absolute positioning of children */
-    width: 1440px; /* Set width */
-    height: 1093px; /* Set height */
-    overflow: hidden; /* Prevent overflow */
-    padding: 20px; /* Add padding for content spacing */
-}
-
-.main-image {
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
-    position: absolute; /* Position the image */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-}
-
-.text-smiles {
-    width: 52px; /* Set width */
-    height: 20px; /* Set height */
-    position: absolute; /* Allow positioning */
-    top: 361px; /* Position from the top */
-    left: 593px; /* Position from the left */
-    font-family: 'Source Sans Pro', sans-serif; /* Font family */
-    font-size: 16px; /* Font size */
-    font-weight: 700; /* Font weight */
-    line-height: 20.11px; /* Line height */
-    text-align: center; /* Center the text */
-    color: #FFFFFF; /* Text color */
-    opacity: 1; /* Fully visible */
-    z-index: 10; /* Ensure it appears above the image */
-}
-
-/* Optional: Adjust for hover or focus states if needed */
-.text-smiles:hover {
-    /* Example hover effect */
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Light glow effect */
-}
-.text-grin {
-    width: 36px; /* Set width */
-    height: 20px; /* Set height */
-    position: absolute; /* Allow positioning */
-    top: 361px; /* Position from the top */
-    left: 704px; /* Position from the left */
-    font-family: 'Source Sans Pro', sans-serif; /* Font family */
-    font-size: 16px; /* Font size */
-    font-weight: 700; /* Font weight */
-    line-height: 20.11px; /* Line height */
-    text-align: center; /* Center the text */
-    color: #FFFFFF; /* Text color */
-    opacity: 1; /* Fully visible */
-    z-index: 10; /* Ensure it appears above the image */
-}
-
-/* Optional: Adjust for hover or focus states if needed */
-.text-grin:hover {
-    /* Example hover effect */
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Light glow effect */
-}
-.text-laugh {
-    width: 49px; /* Set width */
-    height: 20px; /* Set height */
-    position: absolute; /* Allow positioning */
-    top: 361px; /* Position from the top */
-    left: 797px; /* Position from the left */
-    font-family: 'Source Sans Pro', sans-serif; /* Font family */
-    font-size: 16px; /* Font size */
-    font-weight: 700; /* Font weight */
-    line-height: 20.11px; /* Line height */
-    text-align: center; /* Center the text */
-    color: #FFFFFF; /* Text color */
-    opacity: 1; /* Fully visible */
-    z-index: 10; /* Ensure it appears above the image */
-}
-
-/* Optional: Adjust for hover or focus states if needed */
-.text-laugh:hover {
-    /* Example hover effect */
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Light glow effect */
-}
-.text-learn {
-    position: absolute; /* Allow positioning */
-    top: 550px; /* Adjust based on your design */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Offset to center the text */
-    font-family: 'Source Sans Pro', sans-serif; /* Font family */
-    font-size: 32px; /* Font size */
-    font-weight: 700; /* Font weight */
-    line-height: 40.22px; /* Line height */
-    text-align: center; /* Center the text */
-    z-index: 10; /* Ensure it appears above the image */
-}
-.text-learn-main {
-    color: #C271FF; /* Color for "Learn" */
-    font-weight: 700; /* Font weight for "Learn" */
-}
-
-.text-learn-pros {
-    color: #ffffff; /* Color for "from the pros" */
-    font-weight: 300; /* Lighter weight for "from the pros" */
-}
-.text-pros {
-    font-weight: 300; /* Lighter weight for "from the pros" */
-}
-.overlay-container {
-    position: absolute; /* Position relative to the parent */
-    width: 1009px; /* Set width */
-    height: 237px; /* Set height */
-    top: 660px; /* Adjust as needed */
-    left: 217px; /* Adjust as needed */
-    display: flex; /* Use flexbox for alignment */
-    gap: 0; /* No gap between items */
-    opacity: 1; /* Fully visible */
-    z-index: 10; /* Ensure it appears above the main image */
-}
-
-.profile {
-    display: flex; /* Flexbox for profile layout */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center text */
-}
-
-.profile img {
-    max-width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-}
-.profile-bruce img,
-.profile img {
-    width: 150px; /* Set width */
-    height: 150px; /* Set height */
-    object-fit: cover; /* Ensure the image fits well */
-    border-radius: 80px; /* Optional: rounded corners */
-    opacity: 1; /* Fully visible */
-}
-
-.profile h3 {
-    margin: 5px 0; /* Spacing between elements */
-    color: #FFFFFF;
-    font-family: 'Source Sans Pro',bold; /* Font family */
-}
-
-.profile p {
-    margin: 0; /* Remove default margin */
-    color: #FFFFFF;
-    font-family: 'Source Sans Pro', italic; /* Font family */
-    font-size: 17.50px; /* Font size */
-    text-align: center; /* Center the text */
-    width: 150; /* Font weight */
-}
-html, body {
+.GRIN{
+    width: 36px;
+    height: 20px;
+    top: 335px;/* Center vertically */
+    left: 704px;/* Center horizontally */
+    gap: 0px;
+    transform: translate(-50%, -50%); /* Adjust for width and height */
+    opacity: 1; /* Ensure visibility */
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px; /* Adjust line height as needed */
+    text-align: center;
+    color: #ffffff; /* Text color */
     margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
-    height: 100%; /* Set height to 100% for full screen */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
+    display: block; /* Each on a new line */
+    margin-top: 10px; /* Space between elements */
+    margin-left: 30px;
+    position: absolute; /* Use absolute positioning for centering */
+    z-index: 2; /* Higher z-index to appear above the image */
+    
 
-.main-section {
-    padding: 20px; /* Add padding for content spacing */
-    display: flex; /* Allow for flexible layouts */
-    flex-direction: column; /* Stack sections vertically */
 }
-.testimonial-section {
-    width: 943px; /* Set desired width */
-    margin: 20px auto; /* Center the testimonial section */
-}
+.LAUGH {
+ width: 36px;
+height: 20px;
+left: 797px;/* Center horizontally */
+top: 335px;/* Center vertically */
+gap: 0px;
+transform: translate(-50%, -50%); /* Adjust for width and height */
+opacity: 1; /* Ensure visibility */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 16px;
+font-weight: 700;
+line-height: 20.11px; /* Adjust line height as needed */
+text-align: center;
+color: #ffffff; /* Text color */
+margin: 0; /* Remove default margins */
+display: block; /* Each on a new line */
+margin-top: 10px; /* Space between elements */
+margin-left: 50px;
+position: absolute; /* Use absolute positioning for centering */
+z-index: 2; /* Higher z-index to appear above the image */
 
-section {
-    min-height: 100vh; /* Ensure each section takes at least the full viewport height */
-    display: flex; /* Enable flexbox for section content */
-    flex-direction: column; /* Stack content vertically */
+
+
+}
+.Learn {
+width: 261px;
+height: 40px;
+top: 600px;
+left: 604px;
+transform: translate(-50%, -50%); /* Adjust for width and height */
+opacity: 1; /* Ensure visibility */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 32px;
+font-weight: 700;
+line-height: 150.84px; /* Adjust line height as needed */
+text-align: center; /* Center text within the div */
+color:  #C271FF; /* Text color */
+margin: 0; /* Remove default margins */
+display: block; /* Each on a new line */
+margin-top: 10px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+z-index: 2; /* Higher z-index to appear above the image */
+
+
+}
+.from  {
+    width: 261px;
+height: 40px;
+top: 600px;
+left: 745px;
+transform: translate(-50%, -50%); /* Adjust for width and height */
+opacity: 1; /* Ensure visibility */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 32px;
+font-weight: 700;
+line-height: 150.84px; /* Adjust line height as needed */
+text-align: center; /* Center text within the div */
+color:  #ffffff; /* Text color */
+margin: 0; /* Remove default margins */
+display: block; /* Each on a new line */
+margin-top: 10px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+z-index: 2; /* Higher z-index to appear above the image */
+    
+
+}
+.mainbtn {
+    width: 162px; /* Fixed width */
+    height: 44px; /* Fixed height */
+    opacity: 1; /* Ensure visibility */
+    background-color: var(--maincolor); /* Background color */
+    box-shadow: 0px 2px 20px 0px #00000080; /* Ensure hex and Drop shadow*/
+
+    font-family: var(--mainfont); /* Ensure the font is imported */
+    color: var(--textcolor); /* Text color */
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.6px;
+    text-align: center; /* Center text */
+    border-radius: 40px; /* Rounded corners */
+
+    /* Positioning for Overlay */
+    position: absolute; /* Absolute positioning for overlay effect */
+    top: 40%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to be centered */
+    z-index: 10; /* Ensure it sits above other elements */
+}
+.instructors-img {
+    position: absolute; /* Absolute positioning */
+    width: 1440px; /* Set width */
+    height: 1093px;/* Set height */
+    top: 0%; /* Position from the top */
+    left: -4.08px; /* Position from the left */
+    object-fit: cover; /* Ensure the image covers its area */
+    opacity: 1; /* Set to 1 for visibility */ 
+    flex-basis: 1550px; /* Allow it to fit naturally within flex */
+    flex-grow: 1; /* Allow it to grow within the flex container */
+    z-index: 1; /* Layer beneath the text */
+    padding: auto;
+    margin: auto;
+}
+.instructor-p-img{
+    position: absolute; /* Absolute positioning */
+    width: 150px;
+height: 150px;
+top: 850px;
+left: 280px;
+z-index: 1; /* Layer beneath the text */
+opacity: 1; /* Set to 1 for visibility */ 
+transform: translate(-50%, -50%); /* Adjust for width and height */
+padding: auto;
+margin: auto;
+}
+.Phillip{
+width: 150px;
+height: 48px;
+top: 950px;
+left: 280px;
+opacity: 1; /* Ensure visibility */
+transform: translate(-50%, -50%); /* Adjust for width and height */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 18px;
+font-style: italic;
+font-weight: 900;
+line-height: 24px;
+text-align: center;
+color:  #ffffff; /* Text color */
+display: block; /* Each on a new line */
+margin-top: 10px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+z-index: 2; /* Higher z-index to appear above the image */
+justify-content: space-between;
+    
+}
+.Phillip-year{
+    width: 150px;
+height: 48px;
+top: 980px;
+left: 280px;
+opacity: 1; /* Ensure visibility */
+transform: translate(-50%, -50%); /* Adjust for width and height */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 16px;
+font-style: italic;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+color:  #ffffff; /* Text color */
+display: block; /* Each on a new line */
+margin-top: 10px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+z-index: 2; /* Higher z-index to appear above the image */
+justify-content: space-between;
+    
+
+}
+.instructor-n-img{
+    position: absolute; /* Absolute positioning */
+    width: 150px;
+height: 150px;
+top: 850px;
+left: 580px;
+z-index: 1; /* Layer beneath the text */
+opacity: 1; /* Set to 1 for visibility */ 
+transform: translate(-50%, -50%); /* Adjust for width and height */
+padding: auto;
+margin: auto;
+
+}
+.Nannie {
+    width: 150px;
+height: 48px;
+top: 950px;
+left: 580px;
+opacity: 1; /* Ensure visibility */
+transform: translate(-50%, -50%); /* Adjust for width and height */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 18px;
+font-style: italic;
+font-weight: 900;
+line-height: 24px;
+text-align: center;
+color:  #ffffff; /* Text color */
+display: block; /* Each on a new line */
+margin-top: 10px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+z-index: 2; /* Higher z-index to appear above the image */
+justify-content: space-between;
+}
+.Nannie-best{
+    width: 150px;
+    height: 48px;
+    top: 980px;
+    left: 580px;
+    opacity: 1; /* Ensure visibility */
+    transform: translate(-50%, -50%); /* Adjust for width and height */
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color:  #ffffff; /* Text color */
+    display: block; /* Each on a new line */
+    margin-top: 10px; /* Space between elements */
+    position: absolute; /* Use absolute positioning for centering */
+    z-index: 2; /* Higher z-index to appear above the image */
+    justify-content: space-between;
+        
+
+}
+.instructor-b-img{
+    position: absolute; /* Absolute positioning */
+    width: 150px;
+height: 150px;
+top: 850px;
+left: 880px;
+border-radius: 70px;
+z-index: 1; /* Layer beneath the text */
+opacity: 1; /* Set to 1 for visibility */ 
+transform: translate(-50%, -50%); /* Adjust for width and height */
+padding: auto;
+margin: auto;
+
+}
+.Bruce{
+width: 150px;
+height: 48px;
+top: 950px;
+left: 880px;
+opacity: 1; /* Ensure visibility */
+transform: translate(-50%, -50%); /* Adjust for width and height */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 18px;
+font-style: italic;
+font-weight: 900;
+line-height: 24px;
+text-align: center;
+color:  #ffffff; /* Text color */
+display: block; /* Each on a new line */
+margin-top: 10px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+z-index: 2; /* Higher z-index to appear above the image */
+
+}
+.Bruce-friend{
+    width: 150px;
+    height: 48px;
+    top: 980px;
+    left: 880px;
+    opacity: 1; /* Ensure visibility */
+    transform: translate(-50%, -50%); /* Adjust for width and height */
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color:  #ffffff; /* Text color */
+    display: block; /* Each on a new line */
+    margin-top: 10px; /* Space between elements */
+    position: absolute; /* Use absolute positioning for centering */
+    z-index: 2; /* Higher z-index to appear above the image */
+    justify-content: space-between;
+    
+}
+.instructor-h-img{
+    position: absolute; /* Absolute positioning */
+    width: 150px;
+height: 150px;
+top: 850px;
+left: 1150px;
+border-radius: 70px;
+z-index: 1; /* Layer beneath the text */
+opacity: 1; /* Set to 1 for visibility */ 
+transform: translate(-50%, -50%); /* Adjust for width and height */
+padding: auto;
+margin: auto;
+
+}
+.Henry{
+    width: 150px;
+height: 48px;
+top: 950px;
+left: 1150px;
+opacity: 1; /* Ensure visibility */
+transform: translate(-50%, -50%); /* Adjust for width and height */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 18px;
+font-style: italic;
+font-weight: 900;
+line-height: 24px;
+text-align: center;
+color:  #ffffff; /* Text color */
+display: block; /* Each on a new line */
+margin-top: 10px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+z-index: 2; /* Higher z-index to appear above the image */
+} 
+.Henry-winner{
+    width: 150px;
+    height: 48px;
+    top: 980px;
+    left: 1150px;
+    opacity: 1; /* Ensure visibility */
+    transform: translate(-50%, -50%); /* Adjust for width and height */
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color:  #ffffff; /* Text color */
+    display: block; /* Each on a new line */
+    margin-top: 10px; /* Space between elements */
+    position: absolute; /* Use absolute positioning for centering */
+    z-index: 2; /* Higher z-index to appear above the image */
+    justify-content: space-between;
+
+}
+.testimonial{
+    width: 1440px; /* Fixed width */
+    height: 298px; /* Fixed height */
+    top: 1093px;
+    background-color: #C271FF; /* Background color */
+    opacity: 1; /* Ensure visibility */
+    position: relative; /* Positioning context for children */
+    display: inline-flex; /* Enable flexbox */
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
-    margin-bottom: 40px; /* Space between sections */
+    flex-wrap: wrap;
+
+
+}
+.testimonial div {
+    text-align: center; /* Center text within the div */
 }
 
-/* Optional: Add styles for text and buttons */
-h1, h2, h3 {
-    color: #FFF; /* Example color */
-    text-align: center; /* Center text */
+.testimonial-image {
+        width: 160px; /* Set width */
+        height: 160px; /* Set height */
+        object-fit: cover; 
+        margin-top: -30px;
+        opacity: 1; /* Ensure visibility */
+        margin-right: 90%;
+        margin-left: -35px;
 }
 
-button {
-    padding: 10px 20px; /* Add padding to buttons */
-    background-color: #FFF; /* Button color */
-    border: none; /* Remove border */
-    cursor: pointer; /* Pointer cursor */
-}
-html, body {
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
-    height: 100%; /* Set height to 100% for full screen */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-.main-section {
-    position: relative; /* Allow for absolute positioning of the background */
-    z-index: 2; /* Ensure main section is above the background */
-}
-
-.background-section {
-    width: 1440px; /* Full width of the viewport */
-    height: 392px; /* Fixed height */
-    position: absolute; /* Positioned under the main section */
-    top: 900px; /* Adjust as necessary to position under the main content */
-    left: 0; /* Align to the left */
-    background: #C271FF; /* Background color */
+.quote {
+    width: 730px;
+    height: 68px;
+     font-size: 20px;
+    font-weight: 300;
+    top: 1203px;
+    line-height: 33.6px;
+   text-align: left;
+    font-style: var(--mainfont); /* Make sure the font is imported */ /* Italicize quote */
+    color: #ffffff; 
+    margin-left: 25%;
     opacity: 1; /* Ensure visibility */
-    z-index: 1; /* Ensure it is below the main section */
-}
-.main-image-5 {
-    position: absolute; /* Positioning the image absolutely */
-    top: 940px; /* Adjust as necessary to position above the background */
-    left: 20%; /* Center horizontally */
-    transform: translateX(-50%); /* Center adjustment */
-    width: 160px; /* Fixed width */
-    height: 160px; /* Fixed height */
-    object-fit: cover; /* Ensure the image covers the area */
-    z-index: 2; /* Ensure it's above the background */
-}
-.testimonial-text {
-    position: absolute; /* Position the blockquote */
-    top: 950px; /* Adjust this value to position the blockquote */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
-    width: 730px; /* Fixed width */
-    font-family: 'Source Sans Pro', sans-serif; /* Font family */
-    font-size: 22px; /* Font size */
-    font-weight: 400; /* Font weight */
-    line-height: 33.6px; /* Line height */
-    text-align: center; /* Center text */
-    color: #FFFFFF; /* Text color */
-    margin: 0; /* No margin */
-    z-index: 2; /* Ensure it is above the background */
-}
-.testimonial-name {
-    position: absolute; /* Position the name */
-    top: 1020px; /* Adjust this value for positioning */
-    left: 33%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
-    font-family: 'Source Sans Pro', sans-serif; /* Font family */
-    font-size: 22px; /* Font size */
-    font-weight: 700; /* Font weight */
-    color: #FFFFFF; /* Text color */
-    margin-right:  50px; /*  margin */
-    z-index: 2; /* Ensure it is above the background */
-    padding-right: 50px;
-}
-.testimonial-p {
-    position: absolute; /* Position the subtitle */
-    top: 1070px; /* Adjust this value for positioning */
-    left: 31.5%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
-    font-family: 'Source Sans Pro', sans-serif; /* Font family */
-    font-size: 18px; /* Font size */
-    font-weight: 400; /* Font weight */
-    color: #FFFFFF; /* Text color */
-    margin: 0; /* No margin */
-    z-index: 2; /* Ensure it is above the background */
+    margin-top: -20%;
+    margin-bottom: 50px;
 }
 
+.name {
+    width: 129px;
+height: 34px;
+top: 90px;
+opacity: 1; /* Ensure visibility */
+font-size: 22px;
+font-weight: 700;
+line-height: 33.6px;
+text-align: left;
+    font-weight:  var(--mainfont); /* Make sure the font is imported *//* Bold name */
+    color: #ffffff; 
+    margin-left: 25%;
+    margin-top: -20px;
+    
+   
+}
+
+.weather {
+    width: 165px;
+    height: 34px;
+    top: 1004px;
+    font-size: 18px;
+    font-weight: 280;
+    line-height: 33.6px;
+    text-align: left;
+    font-weight:  var(--mainfont); /* Make sure the font is imported *//* Bold name */
+    color: #ffffff; 
+    opacity: 1; /* Ensure visibility */
+    margin-left: 25%;
+    margin-top: -10px;
+}
+.tutorials{
+    width: 1228px;
+    height: 450px;
+   top: 1572px;
+   left: 106px;
+   position: absolute; /* Use absolute positioning for centering */
+   display: flex; /* Enable flexbox */
+   justify-content: center; /* Center content vertically */
+   align-items: center; /* Center content vertically */
+
+}
+.Most{
+    width: 294px;
+    height: 40px;
+    left: 490px;  
+transform: translate(-50%, -50%); /* Adjust for width and height */
+opacity: 1; /* Ensure visibility */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 32px;
+font-weight: 300;
+line-height: 40.22px; /* Adjust line height as needed */
+text-align: center; /* Center text within tutorials  */
+color:#071629; /* Text color */
+margin: 0; /* Remove default margins */
+display: block; /* Each on a new line */
+margin-top: -370px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+
+
+}
+.popular{
+    width: 294px;
+    height: 40px;
+    left: 582px;  
+transform: translate(-50%, -50%); /* Adjust for width and height */
+opacity: 1; /* Ensure visibility */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 32px;
+font-weight: 700;
+line-height: 40.22px; /* Adjust line height as needed */
+text-align: center; /* Center text within tutorials  */
+color:#C271FF; /* Text color */
+margin: 0; /* Remove default margins */
+display: block; /* Each on a new line */
+margin-top: -370px;/* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+
+}
+.tutorialss{
+    width: 294px;
+    height: 40px;
+    left: 697px;  
+transform: translate(-50%, -50%); /* Adjust for width and height */
+opacity: 1; /* Ensure visibility */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 32px;
+font-weight: 300;
+line-height: 40.22px; /* Adjust line height as needed */
+text-align: center; /* Center text within tutorials  */
+color:#071629; /* Text color */
+display: block; /* Each on a new line */
+margin-top: -370px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+
+}
+.content{
+    width: 255px;
+height: 335px;
+top: 70px;
+left: 58px;
+display: flex; /* Enable flexbox */
+flex-wrap:nowrap;
+   justify-content: center; /* Center content vertically */
+   position: absolute; /* Use absolute positioning for centering */
+
+}
+.Diagonal {
+    position: relative; /* Absolute positioning */
+    width: 255px  ;
+    height: 335px;
+    top: -90px;
+    left: 33px;
+   opacity: 1; /* Set to 1 for visibility */ 
+  object-fit: contain;
+
+}
+.Diagonal-smile{
+    width: 106px;
+    height: 20px;
+    top: 170px;
+    left: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px; /* Adjust line height as needed */
+    text-align: right;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    opacity: 1; /* Ensure visibility */
+    color:#071629; /* Text color */
+    position: absolute; /* Use absolute positioning for centering */
+    display: flex;
+    
+    
+
+}
+.Diagonal-p {
+    width: 242px;
+height: 48px;
+top: 170px;
+left: 20px;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+font-family: var(--mainfont); /* Make sure the font is imported */
+opacity: 1; /* Ensure visibility */
+color: #07162980;/* Text color */
+margin: 0; /* Remove default margins */
+display: flex; /* Each on a new line */
+margin-top: 25px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+
+
+}
+.Diagonal-play {
+    position: relative; /* Absolute positioning */
+    width: 64px;
+    height: 64px;
+    top: 50px;
+    left: -120px;
+   opacity: 1; /* Set to 1 for visibility */ 
+  object-fit: contain;
+
+}
+.Diagonal-ph {
+    width: 30px;
+height: 30px;
+top: 255px;
+left: 40px;
+position: absolute; /* Absolute positioning */
+opacity: 1; /* Set to 1 for visibility */ 
+  object-fit: contain;
+
+
+}
+.Massey {
+    width: 86px;
+height: 27px;
+top: 260px;
+left: 90px;
+font-size: 14px;
+font-weight: 600;
+line-height: 27px; /* Adjust line height as needed */
+text-align: right;
+font-family: var(--mainfont); /* Make sure the font is imported */
+opacity: 1; /* Ensure visibility */
+color: #C271FF; /* Text color */
+display: flex; /* Each on a new line */
+position: absolute; /* Use absolute positioning for centering */
+
+}
+.rating{
+    width: 107px;
+height: 15px;
+top: 305px;
+left: 13px;
+opacity: 1; /* Ensure visibility */
+object-fit: contain;
+position: absolute; /* Absolute positioning */
+
+
+}
+.min{
+    width: 34px;
+height: 27px;
+top: 300px;
+left: 200px;
+font-size: 14px;
+font-weight: 600;
+line-height: 27px;
+text-align: right;
+font-family: var(--mainfont); /* Make sure the font is imported */
+color: #C271FF; /* Text color */
+opacity: 1; /* Ensure visibility */
+position: absolute; /* Use absolute positioning for centering */
+}
+.content-happy{
+    width: 255px;
+height: 335px;
+top: -1px;
+left: 280px;
+display: flex; /* Enable flexbox */
+flex-wrap:nowrap;
+   justify-content: center; /* Center content vertically */
+   position: absolute; /* Use absolute positioning for centering */
+}
+.Happy{
+    position: relative; /* Absolute positioning */
+    width: 255px;
+    height: 154px;
+    top: -2px;
+    left: 32px;
+   opacity: 1; /* Set to 1 for visibility */ 
+  object-fit: contain;
+}
+.Happy-Smile{
+    width: 70px;
+height: 20px;
+top: 172px;
+left: 13px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px; /* Adjust line height as needed */
+    text-align: left;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    opacity: 1; /* Ensure visibility */
+    color:#071629; /* Text color */
+    position:absolute; /* Use absolute positioning for centering */
+    display: flex;
+white-space: nowrap;
+}
+.Happy-p{
+    width: 242px;
+height: 48px;
+top: 170px;
+left: 13px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    opacity: 1; /* Ensure visibility */
+    color: #07162980;/* Text color */
+    margin: 0; /* Remove default margins */
+    display: flex; /* Each on a new line */
+    margin-top: 25px; /* Space between elements */
+    position: absolute; /* Use absolute positioning for centering */
+}
+.Happy-play{
+    position: relative; /* Absolute positioning */
+    width: 64px;
+    height: 64px;
+    top: 50px;
+    left: -120px;
+   opacity: 1; /* Set to 1 for visibility */ 
+  object-fit: contain;
+}
+.Happy-ph{
+    width: 30px;
+    height: 30px;
+    top: 255px;
+    left: 40px;
+    position: absolute; /* Absolute positioning */
+    opacity: 1; /* Set to 1 for visibility */ 
+      object-fit: contain; 
+}
+.Massey-h{
+    width: 86px;
+height: 27px;
+top: 257px;
+left: 90px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 27px; /* Adjust line height as needed */
+    text-align: right;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    opacity: 1; /* Ensure visibility */
+    color: #C271FF; /* Text color */
+    display: flex; /* Each on a new line */
+    position: absolute; /* Use absolute positioning for centering */
+}
+.rating-h{
+    width: 107px;
+    height: 15px;
+    top: 305px;
+    left: 13px;
+    opacity: 1; /* Ensure visibility */
+    object-fit: contain;
+    position: absolute; /* Absolute positioning */ 
+}
+.min-h{
+    width: 34px;
+    height: 27px;
+    top: 300px;
+    left: 200px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: right;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    color: #C271FF; /* Text color */
+    opacity: 1; /* Ensure visibility */
+    position: absolute; /* Use absolute positioning for centering */
+}
+.content-natural {
+    width: 255px;
+    height: 335px;
+    top: -1px;
+    left: 570px;
+    display: flex; /* Enable flexbox */
+    flex-wrap:nowrap;
+       justify-content: center; /* Center content vertically */
+       position: absolute; /* Use absolute positioning for centering */
+}
+.Natural{
+    position: relative; /* Absolute positioning */
+    width: 255px;
+    height: 154px;
+    top: -3px;
+    left: 32px;
+   opacity: 1; /* Set to 1 for visibility */ 
+  object-fit: contain;
+}
+.Natural-Smile{
+    width: 97px;
+height: 20px;
+top: 172px;
+left: 13px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20.11px; /* Adjust line height as needed */
+        text-align: left;
+        font-family: var(--mainfont); /* Make sure the font is imported */
+        opacity: 1; /* Ensure visibility */
+        color:#071629; /* Text color */
+        position:absolute; /* Use absolute positioning for centering */
+        display: flex;
+    white-space: nowrap;
+}
+.Natural-p{
+    width: 242px;
+height: 48px;
+top: 170px;
+left: 13px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        font-family: var(--mainfont); /* Make sure the font is imported */
+        opacity: 1; /* Ensure visibility */
+        color: #07162980;/* Text color */
+        margin: 0; /* Remove default margins */
+        display: flex; /* Each on a new line */
+        margin-top: 25px; /* Space between elements */
+        position: absolute; /* Use absolute positioning for centering */
+}
+.Natural-play{
+    position: relative; /* Absolute positioning */
+    width: 64px;
+    height: 64px;
+    top: 50px;
+    left: -120px;
+   opacity: 1; /* Set to 1 for visibility */ 
+  object-fit: contain;
+
+}
+.Natural-ph{
+    width: 30px;
+    height: 30px;
+    top: 255px;
+    left: 40px;
+    position: absolute; /* Absolute positioning */
+    opacity: 1; /* Set to 1 for visibility */ 
+      object-fit: contain; 
+}
+.Massey-n{
+    width: 86px;
+height: 27px;
+top: 257px;
+left: 90px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 27px; /* Adjust line height as needed */
+    text-align: right;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    opacity: 1; /* Ensure visibility */
+    color: #C271FF; /* Text color */
+    display: flex; /* Each on a new line */
+    position: absolute; /* Use absolute positioning for centering */
+}
+.rating-n{
+    width: 107px;
+    height: 15px;
+    top: 300px;
+    left: 13px;
+    opacity: 1; /* Ensure visibility */
+    object-fit: contain;
+    position: absolute; /* Absolute positioning */ 
+}
+.min-n{
+    width: 34px;
+    height: 27px;
+    top: 300px;
+    left: 200px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: right;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    color: #C271FF; /* Text color */
+    opacity: 1; /* Ensure visibility */
+    position: absolute; /* Use absolute positioning for centering */  
+}
+.content-sad{
+    width: 255px;
+    height: 335px;
+    top: -1px;
+    left: 850px;
+    display: flex; /* Enable flexbox */
+    flex-wrap:nowrap;
+       justify-content: center; /* Center content vertically */
+       position: absolute; /* Use absolute positioning for centering */
+}
+.Sad{
+    position: relative; /* Absolute positioning */
+    width: 255px;
+    height: 154px;
+    top: -3px;
+    left: 32px;
+    opacity: 1; /* Set to 1 for visibility */ 
+    object-fit: contain;
+    }
+    .sad-smile{
+        width: 97px;
+    height: 20px;
+    top: 172px;
+    left: 13px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20.11px; /* Adjust line height as needed */
+            text-align: left;
+            font-family: var(--mainfont); /* Make sure the font is imported */
+            opacity: 1; /* Ensure visibility */
+            color:#071629; /* Text color */
+            position:absolute; /* Use absolute positioning for centering */
+            display: flex;
+        white-space: nowrap;
+    }
+    .sad-p{
+        width: 242px;
+        height: 48px;
+        top: 170px;
+        left: 13px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: left;
+                font-family: var(--mainfont); /* Make sure the font is imported */
+                opacity: 1; /* Ensure visibility */
+                color: #07162980;/* Text color */
+                margin: 0; /* Remove default margins */
+                display: flex; /* Each on a new line */
+                margin-top: 25px; /* Space between elements */
+                position: absolute; /* Use absolute positioning for centering */
+    }
+    .sad-play{
+        position: relative; /* Absolute positioning */
+        width: 64px;
+        height: 64px;
+        top: 50px;
+        left: -120px;
+       opacity: 1; /* Set to 1 for visibility */ 
+      object-fit: contain; 
+    }
+    .sad-ph{
+        width: 30px;
+        height: 30px;
+        top: 255px;
+        left: 40px;
+        position: absolute; /* Absolute positioning */
+        opacity: 1; /* Set to 1 for visibility */ 
+          object-fit: contain; 
+    }
+    .Massey-s{
+        width: 86px;
+        height: 27px;
+        top: 257px;
+        left: 90px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 27px; /* Adjust line height as needed */
+            text-align: right;
+            font-family: var(--mainfont); /* Make sure the font is imported */
+            opacity: 1; /* Ensure visibility */
+            color: #C271FF; /* Text color */
+            display: flex; /* Each on a new line */
+            position: absolute; /* Use absolute positioning for centering */
+    }
+    .rating-s{
+        width: 107px;
+        height: 15px;
+        top: 300px;
+        left: 13px;
+        opacity: 1; /* Ensure visibility */
+        object-fit: contain;
+        position: absolute; /* Absolute positioning */ 
+    }
+    .min-s{
+        width: 34px;
+        height: 27px;
+        top: 300px;
+        left: 200px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: right;
+        font-family: var(--mainfont); /* Make sure the font is imported */
+        color: #C271FF; /* Text color */
+        opacity: 1; /* Ensure visibility */
+        position: absolute; /* Use absolute positioning for centering */  
+    }
+    .membership{
+        width: 1440px; /* Fixed width */
+    height: 502px;/* Fixed height */
+    top: 2200px;
+    background: #071629;/* Background color */
+    opacity: 1; /* Ensure visibility */
+    position: absolute; /* Positioning context for children */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    flex-wrap: nowrap;
+    }
+    .free{
+        width: 234px;
+    height: 40px;
+    top:35px;
+    left: 617px;
+    transform: translate(-50%, -50%); /* Adjust for width and height */
+    opacity: 1; /* Ensure visibility */
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.22px; /* Adjust line height as needed */
+    text-align: center; /* Center text within tutorials  */
+    color:  #C271FF;/* Text color */
+    display: block; /* Each on a new line */
+    position: absolute; /* Use absolute positioning for centering */
+    
+    }
+    .member{
+        width: 234px;
+    height: 40px;
+    top:35px;
+    left: 740px;
+    transform: translate(-50%, -50%); /* Adjust for width and height */
+    opacity: 1; /* Ensure visibility */
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40.22px; /* Adjust line height as needed */
+    text-align: center; /* Center text within tutorials  */
+    color:  #ffffff;/* Text color */
+    display: block; /* Each on a new line */
+    position: absolute; /* Use absolute positioning for centering */
+    }
+    .membership-item1{
+        width: 257px;
+    height: 153px;
+    top: 168px;
+    left: 164px;
+        display: flex; /* Enable flexbox */
+        flex-wrap:nowrap;
+        justify-content: center; /* Center content vertically */
+        position: absolute; /* Use absolute positioning for centering */
+    
+    
+    }
+    .smile1{
+        width: 43.67px;
+    height: 35.35px;
+    top: 20px;
+    left: 106.71px;
+    position: absolute; /* Absolute positioning */
+        opacity: 1; /* Set to 1 for visibility */ 
+          object-fit: contain; 
+    
+    }
+    .smileh1{
+        width: 256px;
+    height: 26px;
+    top: 62px;
+    left: 0.5px;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    opacity: 1; /* Ensure visibility */
+    color:#ffffff; /* Text color */
+    position:absolute; /* Use absolute positioning for centering */
+    display: flex;
+    white-space: nowrap;
+    justify-content: center; /* Center content vertically */
+    }
+    .smilep1{
+        width: 212px;
+    height: 52px;
+    top: 90px;
+    left: 22.5px;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    opacity: 1; /* Ensure visibility */
+    color:#ffffff; /* Text color */
+    position:absolute; /* Use absolute positioning for centering */
+    display: flex;
+    white-space: wrap;
+    justify-content: center; /* Center content vertically */
+    
+    }
+    .membership-item2{
+        width: 257px;
+    height: 153px;
+    top: 168px;
+    left: 448px;
+        display: flex; /* Enable flexbox */
+        flex-wrap:nowrap;
+        justify-content: center; /* Center content vertically */
+        position: absolute; /* Use absolute positioning for centering */
+    
+    }
+    .smile2{
+        width: 43.67px;
+        height: 35.35px;
+        top: 20px;
+        left: 106.71px;
+        position: absolute; /* Absolute positioning */
+            opacity: 1; /* Set to 1 for visibility */ 
+              object-fit: contain; 
+    }
+    .smileh2{
+        width: 256px;
+        height: 26px;
+        top: 62px;
+        left: 0.5px;
+        font-family: var(--mainfont); /* Make sure the font is imported */
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26px;
+        text-align: center;
+        opacity: 1; /* Ensure visibility */
+        color:#ffffff; /* Text color */
+        position:absolute; /* Use absolute positioning for centering */
+        display: flex;
+        white-space: nowrap;
+        justify-content: center; /* Center content vertically */
+    }
+    .smilep2{
+        width: 212px;
+        height: 52px;
+        top: 90px;
+        left: 22.5px;
+        font-family: var(--mainfont); /* Make sure the font is imported */
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: center;
+        opacity: 1; /* Ensure visibility */
+        color:#ffffff; /* Text color */
+        position:absolute; /* Use absolute positioning for centering */
+        display: flex;
+        white-space: wrap;
+        justify-content: center; /* Center content vertically */
+    }
+    .membership-item3{
+        width: 257px;
+    height: 153px;
+    top: 168px;
+    left: 733px;
+        display: flex; /* Enable flexbox */
+        flex-wrap:nowrap;
+        justify-content: center; /* Center content vertically */
+        position: absolute; /* Use absolute positioning for centering */
+    
+    
+    }
+    .smile3{
+        width: 43.67px;
+        height: 35.35px;
+        top: 20px;
+        left: 106.71px;
+        position: absolute; /* Absolute positioning */
+            opacity: 1; /* Set to 1 for visibility */ 
+              object-fit: contain; 
+    }
+    .smileh3{
+        width: 256px;
+        height: 26px;
+        top: 62px;
+        left: 0.5px;
+        font-family: var(--mainfont); /* Make sure the font is imported */
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26px;
+        text-align: center;
+        opacity: 1; /* Ensure visibility */
+        color:#ffffff; /* Text color */
+        position:absolute; /* Use absolute positioning for centering */
+        display: flex;
+        white-space: nowrap;
+        justify-content: center; /* Center content vertically */
+    }
+    .smilep3{
+        width: 212px;
+        height: 52px;
+        top: 90px;
+        left: 22.5px;
+        font-family: var(--mainfont); /* Make sure the font is imported */
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: center;
+        opacity: 1; /* Ensure visibility */
+        color:#ffffff; /* Text color */
+        position:absolute; /* Use absolute positioning for centering */
+        display: flex;
+        white-space: wrap;
+        justify-content: center; /* Center content vertically */   
+    }
+    .membership-item4{
+        width: 257px;
+    height: 153px;
+    top: 168px;
+    left: 1019px;
+        display: flex; /* Enable flexbox */
+        flex-wrap:nowrap;
+        justify-content: center; /* Center content vertically */
+        position: absolute; /* Use absolute positioning for centering */
+    
+    
+    }
+    .smile4{
+        width: 43.67px;
+        height: 35.35px;
+        top: 20px;
+        left: 106.71px;
+        position: absolute; /* Absolute positioning */
+            opacity: 1; /* Set to 1 for visibility */ 
+              object-fit: contain; 
+    }
+    .smileh4{
+        width: 256px;
+        height: 26px;
+        top: 62px;
+        left: 0.5px;
+        font-family: var(--mainfont); /* Make sure the font is imported */
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26px;
+        text-align: center;
+        opacity: 1; /* Ensure visibility */
+        color:#ffffff; /* Text color */
+        position:absolute; /* Use absolute positioning for centering */
+        display: flex;
+        white-space: nowrap;
+        justify-content: center; /* Center content vertically */
+    }
+    .smilep4{
+        width: 212px;
+        height: 52px;
+        top: 90px;
+        left: 22.5px;
+        font-family: var(--mainfont); /* Make sure the font is imported */
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: center;
+        opacity: 1; /* Ensure visibility */
+        color:#ffffff; /* Text color */
+        position:absolute; /* Use absolute positioning for centering */
+        display: flex;
+        white-space: wrap;
+        justify-content: center; /* Center content vertically */   
+    }
+    .mainbtn-bottom{
+        width: 162px;
+    height: 44px;
+    top: 206px;
+    left: 639px;
+        opacity: 1; /* Ensure visibility */
+        background-color: var(--maincolor); /* Background color */
+        box-shadow: 0px 2px 20px 0px #00000080; /* Ensure hex and Drop shadow*/
+    
+        font-family: var(--mainfont); /* Ensure the font is imported */
+        color: var(--textcolor); /* Text color */
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17.6px;
+        text-align: center; /* Center text */
+        border-radius: 40px; /* Rounded corners */
+    
+        /* Positioning for Overlay */
+        position: absolute; /* Absolute positioning for overlay effect */
+        top: 87%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust position to be centered */
+        z-index: 10; /* Ensure it sits above other elements */
+    }
+    .faq{
+        width: 920px;
+    height: 707px;
+    top: 2778px;
+    left: 249px;
+    position: absolute; /* Use absolute positioning for centering */
+       display: flex; /* Enable flexbox */
+       justify-content: center; /* Center content vertically */
+       align-items: center; /* Center content vertically */
+    
+    
+    }
+    .F{
+        width: 136px;
+    height: 75px;
+    left: 460px;
+    top: 90px;
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 75.42px;/* Adjust line height as needed */
+    text-align: center;
+    color: #071629; /* Text color */
+    transform: translate(-50%, -50%); /* Adjust for width and height */
+    opacity: 1; /* Ensure visibility */
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    display: block; /* Each on a new line */
+    position: absolute; /* Use absolute positioning for centering */
+    
+    }
+    .faq-item1{
+        width: 350px;
+    height: 242px;
+    top: 149px;
+    left: 10px;
+    display: flex; /* Enable flexbox */
+        flex-wrap:wrap;
+        justify-content: center; /* Center content vertically */
+        position: absolute; /* Use absolute positioning for centering */
+    
+    
+    }
+    .fh1{
+        width: 145px;
+    height: 20px;
+    left: 10px;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px;
+    text-align: left;
+    color: #071629;
+    white-space: nowrap;
+    position: absolute; /* Use absolute positioning for centering */
+    opacity: 1; /* Ensure visibility */
+    
+    
+    }
+    .fp1{
+        width: 350px;
+    height: 192px;
+    top: 50px;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #07162980;
+    position:absolute; /* Use absolute positioning for centering */
+        display: flex;
+        white-space: wrap;
+        justify-content: center; /* Center content vertically */   
+        opacity: 1; /* Ensure visibility */
+    
+    
+    }
+    .faq-item2{
+        width: 350px;
+    height: 242px;
+    top: 465px;
+    left: 10px;
+    display: flex; /* Enable flexbox */
+        flex-wrap:wrap;
+        justify-content: center; /* Center content vertically */
+        position: absolute; /* Use absolute positioning for centering */
+    
+    }
+    .fh2{
+        width: 145px;
+    height: 20px;
+    left: 10px;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px;
+    text-align: left;
+    color: #071629;
+    white-space: nowrap;
+    position: absolute; /* Use absolute positioning for centering */
+    opacity: 1; /* Ensure visibility */
+    }
+    .fp2{
+        width: 350px;
+        height: 192px;
+        top: 50px;
+        font-family: var(--mainfont); /* Make sure the font is imported */
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #07162980;
+        position:absolute; /* Use absolute positioning for centering */
+            display: flex;
+            white-space: wrap;
+            justify-content: center; /* Center content vertically */   
+            opacity: 1; /* Ensure visibility */
+    }
+    .faq-item3{
+        width: 350px;
+    height: 242px;
+    top: 149px;
+    left: 570px;
+    display: flex; /* Enable flexbox */
+        flex-wrap:wrap;
+        justify-content: center; /* Center content vertically */
+        position: absolute; /* Use absolute positioning for centering */
+    }
+    .fh3{
+        width: 145px;
+    height: 20px;
+    left: 10px;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px;
+    text-align: left;
+    color: #071629;
+    white-space: nowrap;
+    position: absolute; /* Use absolute positioning for centering */
+    opacity: 1; /* Ensure visibility */
+    
+    }
+    .fp3{
+        width: 350px;
+    height: 192px;
+    top: 50px;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #07162980;
+    position:relative; /* Use absolute positioning for centering */
+        display: flex;
+        white-space: wrap;
+        justify-content: center; /* Center content vertically */   
+        opacity: 1; /* Ensure visibility */
+    
+    }
+    .faq-item4{
+        width: 350px;
+    height: 242px;
+    top: 465px;
+    left: 570px;
+    display: flex; /* Enable flexbox */
+        flex-wrap:wrap;
+        justify-content: center; /* Center content vertically */
+        position: absolute; /* Use absolute positioning for centering */
+    
+    
+    }
+    .fh4{
+        width: 145px;
+        height: 20px;
+        left: 10px;
+        font-family: var(--mainfont); /* Make sure the font is imported */
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20.11px;
+        text-align: left;
+        color: #071629;
+        white-space: nowrap;
+        position: absolute; /* Use absolute positioning for centering */
+        opacity: 1; /* Ensure visibility */
+    }
+    .fp4{
+        width: 350px;
+        height: 192px;
+        top: 50px;
+        font-family: var(--mainfont); /* Make sure the font is imported */
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #07162980;
+        position:relative; /* Use absolute positioning for centering */
+            display: flex;
+            white-space: wrap;
+            justify-content: center; /* Center content vertically */   
+            opacity: 1; /* Ensure visibility */
+    }
+    .footer-content{
+        width: 1440px; /* Fixed width */
+    height: 249px;/* Fixed height */
+    top: 3669px;
+    background: #071629;/* Background color */
+    position: absolute; /* Positioning context for children */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center content vertically */   
+    align-items: center; /* Center content horizontally */
+    flex-wrap: nowrap;
+    
+    }
+    .social-icons{
+        width: 130px;
+    height: 30px;
+    top: 90px;
+    left: 1070px;
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    color: #FFFFFF;
+    position: absolute; /* Absolute positioning */
+            opacity: 1; /* Set to 1 for visibility */ 
+              object-fit: contain; 
+    
+    
+    }
+    .logo-bottom{
+        width: 167.02px;
+    height: 29.46px;
+    top: 100.02px;
+    left: 90px;
+    justify-content: left;
+    position: absolute; /* Absolute positioning */
+            opacity: 1; /* Set to 1 for visibility */ 
+              object-fit: contain; 
+    }
+    .footerp{
+        width: 96px;
+    height: 15px;
+    top: 195px;
+    left: 672px;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 15.08px;
+    color: #FFFFFF;/* Text color Hex*/
+    opacity: 0.35px;/* Set to 0.35 for visibility */ 
+    justify-content: center; /* Center content horizontally */   
+    align-items: center; /* Center content horizontally */
+    margin-bottom: -140px;
+    
+    }
