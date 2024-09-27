@@ -1,0 +1,1322 @@
+.header-menu {
+    border: 1px solid red;
+    width: 100%;
+    max-width:  1103.41px;
+    height: 29.46px;
+     top: 35.02px;
+    left: 171.59px;
+    padding: 0px;
+    margin: auto;
+    gap: 0px;
+   opacity: 0px;
+   flex-basis: 100%;
+   z-index: 2; /* Higher z-index to appear above the image */
+
+}
+.header-menu-navbar {
+    display: flex; /* Makes sure items inside nav are in a row */
+    align-items: center; /* Vertically centers items */
+    justify-content: space-between; /* Distributes space between logo and menu items */
+    width: 100%;
+    z-index: 2; /* Higher z-index to appear above the image */
+}
+
+.logo{
+width: 167.02px;
+height: 29.46px;
+top: 35.02px;
+left: 171.59px;
+gap: 0px;
+opacity: 0px;
+z-index: 2; /* Higher z-index to appear above the image */
+}
+
+.header-list {
+    list-style: none; /* Removes bullet points */
+    display: flex; /* Aligns list items in a row */
+    gap: 30px; /* Space between menu items */
+    margin: 0; /* Resets default margin */
+    padding: 0; /* Resets default padding */
+    z-index: 2; /* Higher z-index to appear above the image */
+}
+/* Specific styles for each header-list */
+.COURSE {
+    width: 50px; /* Width for COURSE */
+    height: 15px; /* Height for COURSE */
+    color: #ffffff;
+}
+
+.PRICING {
+    width: 45px; /* Width for PRICING */
+    height: 15px; /* Height for PRICING */
+    color: #ffffff;
+}
+
+.LOGIN {
+    width: 34px; /* Width for LOGIN */
+    height: 15px; /* Height for LOGIN */
+    color: #ffffff;
+}
+.Get {
+    width: 684px; /* Fixed width */
+    height: 151px; /* Fixed height */
+    top: 25%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for width and height */
+    opacity: 1; /* Ensure visibility */
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 150.84px; /* Adjust line height as needed */
+    text-align: center; /* Center text within the div */
+    color: #ffffff; /* Text color */
+    margin: 0; /* Remove default margins */
+    display: block; /* Each on a new line */
+    margin-top: 10px; /* Space between elements */
+    position: absolute; /* Use absolute positioning for centering */
+    z-index: 2; /* Higher z-index to appear above the image */
+}
+.SMILES{
+    width: 49px;
+height: 20px;
+top: 335px;/* Center vertically */
+left: 597px;/* Center horizontally */
+gap: 0px;
+transform: translate(-50%, -50%); /* Adjust for width and height */
+opacity: 1; /* Ensure visibility */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 16px;
+font-weight: 700;
+line-height: 20.11px; /* Adjust line height as needed */
+text-align: center;
+color: #ffffff; /* Text color */
+margin: 0; /* Remove default margins */
+display: block; /* Each on a new line */
+margin-top: 10px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+z-index: 2; /* Higher z-index to appear above the image */
+
+
+
+}
+.GRIN{
+    width: 36px;
+    height: 20px;
+    top: 335px;/* Center vertically */
+    left: 704px;/* Center horizontally */
+    gap: 0px;
+    transform: translate(-50%, -50%); /* Adjust for width and height */
+    opacity: 1; /* Ensure visibility */
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px; /* Adjust line height as needed */
+    text-align: center;
+    color: #ffffff; /* Text color */
+    margin: 0; /* Remove default margins */
+    display: block; /* Each on a new line */
+    margin-top: 10px; /* Space between elements */
+    margin-left: 30px;
+    position: absolute; /* Use absolute positioning for centering */
+    z-index: 2; /* Higher z-index to appear above the image */
+    
+
+}
+.LAUGH {
+ width: 36px;
+height: 20px;
+left: 797px;/* Center horizontally */
+top: 335px;/* Center vertically */
+gap: 0px;
+transform: translate(-50%, -50%); /* Adjust for width and height */
+opacity: 1; /* Ensure visibility */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 16px;
+font-weight: 700;
+line-height: 20.11px; /* Adjust line height as needed */
+text-align: center;
+color: #ffffff; /* Text color */
+margin: 0; /* Remove default margins */
+display: block; /* Each on a new line */
+margin-top: 10px; /* Space between elements */
+margin-left: 50px;
+position: absolute; /* Use absolute positioning for centering */
+z-index: 2; /* Higher z-index to appear above the image */
+
+
+
+}
+.Learn {
+width: 261px;
+height: 40px;
+top: 600px;
+left: 604px;
+transform: translate(-50%, -50%); /* Adjust for width and height */
+opacity: 1; /* Ensure visibility */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 32px;
+font-weight: 700;
+line-height: 150.84px; /* Adjust line height as needed */
+text-align: center; /* Center text within the div */
+color:  #C271FF; /* Text color */
+margin: 0; /* Remove default margins */
+display: block; /* Each on a new line */
+margin-top: 10px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+z-index: 2; /* Higher z-index to appear above the image */
+
+
+}
+.from  {
+    width: 261px;
+height: 40px;
+top: 600px;
+left: 745px;
+transform: translate(-50%, -50%); /* Adjust for width and height */
+opacity: 1; /* Ensure visibility */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 32px;
+font-weight: 700;
+line-height: 150.84px; /* Adjust line height as needed */
+text-align: center; /* Center text within the div */
+color:  #ffffff; /* Text color */
+margin: 0; /* Remove default margins */
+display: block; /* Each on a new line */
+margin-top: 10px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+z-index: 2; /* Higher z-index to appear above the image */
+    
+
+}
+
+.instructors-img {
+    position: absolute; /* Absolute positioning */
+    width: 1440px; /* Set width */
+    height: 1093px;/* Set height */
+    top: 0%; /* Position from the top */
+    left: -4.08px; /* Position from the left */
+    object-fit: cover; /* Ensure the image covers its area */
+    opacity: 1; /* Set to 1 for visibility */ 
+    flex-basis: 1550px; /* Allow it to fit naturally within flex */
+    flex-grow: 1; /* Allow it to grow within the flex container */
+    z-index: 1; /* Layer beneath the text */
+    padding: auto;
+    margin: auto;
+}
+.instructor-p-img{
+    position: absolute; /* Absolute positioning */
+    width: 150px;
+height: 150px;
+top: 850px;
+left: 280px;
+z-index: 1; /* Layer beneath the text */
+opacity: 1; /* Set to 1 for visibility */ 
+transform: translate(-50%, -50%); /* Adjust for width and height */
+padding: auto;
+margin: auto;
+}
+.Phillip{
+width: 150px;
+height: 48px;
+top: 950px;
+left: 280px;
+opacity: 1; /* Ensure visibility */
+transform: translate(-50%, -50%); /* Adjust for width and height */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 18px;
+font-style: italic;
+font-weight: 900;
+line-height: 24px;
+text-align: center;
+color:  #ffffff; /* Text color */
+display: block; /* Each on a new line */
+margin-top: 10px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+z-index: 2; /* Higher z-index to appear above the image */
+justify-content: space-between;
+    
+}
+.Phillip-year{
+    width: 150px;
+height: 48px;
+top: 980px;
+left: 280px;
+opacity: 1; /* Ensure visibility */
+transform: translate(-50%, -50%); /* Adjust for width and height */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 16px;
+font-style: italic;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+color:  #ffffff; /* Text color */
+display: block; /* Each on a new line */
+margin-top: 10px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+z-index: 2; /* Higher z-index to appear above the image */
+justify-content: space-between;
+    
+
+}
+.instructor-n-img{
+    position: absolute; /* Absolute positioning */
+    width: 150px;
+height: 150px;
+top: 850px;
+left: 580px;
+z-index: 1; /* Layer beneath the text */
+opacity: 1; /* Set to 1 for visibility */ 
+transform: translate(-50%, -50%); /* Adjust for width and height */
+padding: auto;
+margin: auto;
+
+}
+.Nannie {
+    width: 150px;
+height: 48px;
+top: 950px;
+left: 580px;
+opacity: 1; /* Ensure visibility */
+transform: translate(-50%, -50%); /* Adjust for width and height */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 18px;
+font-style: italic;
+font-weight: 900;
+line-height: 24px;
+text-align: center;
+color:  #ffffff; /* Text color */
+display: block; /* Each on a new line */
+margin-top: 10px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+z-index: 2; /* Higher z-index to appear above the image */
+justify-content: space-between;
+}
+.Nannie-best{
+    width: 150px;
+    height: 48px;
+    top: 980px;
+    left: 580px;
+    opacity: 1; /* Ensure visibility */
+    transform: translate(-50%, -50%); /* Adjust for width and height */
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color:  #ffffff; /* Text color */
+    display: block; /* Each on a new line */
+    margin-top: 10px; /* Space between elements */
+    position: absolute; /* Use absolute positioning for centering */
+    z-index: 2; /* Higher z-index to appear above the image */
+    justify-content: space-between;
+        
+
+}
+.instructor-b-img{
+    position: absolute; /* Absolute positioning */
+    width: 150px;
+height: 150px;
+top: 850px;
+left: 880px;
+border-radius: 70px;
+z-index: 1; /* Layer beneath the text */
+opacity: 1; /* Set to 1 for visibility */ 
+transform: translate(-50%, -50%); /* Adjust for width and height */
+padding: auto;
+margin: auto;
+
+}
+.Bruce{
+width: 150px;
+height: 48px;
+top: 950px;
+left: 880px;
+opacity: 1; /* Ensure visibility */
+transform: translate(-50%, -50%); /* Adjust for width and height */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 18px;
+font-style: italic;
+font-weight: 900;
+line-height: 24px;
+text-align: center;
+color:  #ffffff; /* Text color */
+display: block; /* Each on a new line */
+margin-top: 10px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+z-index: 2; /* Higher z-index to appear above the image */
+
+}
+.Bruce-friend{
+    width: 150px;
+    height: 48px;
+    top: 980px;
+    left: 880px;
+    opacity: 1; /* Ensure visibility */
+    transform: translate(-50%, -50%); /* Adjust for width and height */
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color:  #ffffff; /* Text color */
+    display: block; /* Each on a new line */
+    margin-top: 10px; /* Space between elements */
+    position: absolute; /* Use absolute positioning for centering */
+    z-index: 2; /* Higher z-index to appear above the image */
+    justify-content: space-between;
+    
+}
+.instructor-h-img{
+    position: absolute; /* Absolute positioning */
+    width: 150px;
+height: 150px;
+top: 850px;
+left: 1150px;
+border-radius: 70px;
+z-index: 1; /* Layer beneath the text */
+opacity: 1; /* Set to 1 for visibility */ 
+transform: translate(-50%, -50%); /* Adjust for width and height */
+padding: auto;
+margin: auto;
+
+}
+.Henry{
+    width: 150px;
+height: 48px;
+top: 950px;
+left: 1150px;
+opacity: 1; /* Ensure visibility */
+transform: translate(-50%, -50%); /* Adjust for width and height */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 18px;
+font-style: italic;
+font-weight: 900;
+line-height: 24px;
+text-align: center;
+color:  #ffffff; /* Text color */
+display: block; /* Each on a new line */
+margin-top: 10px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+z-index: 2; /* Higher z-index to appear above the image */
+} 
+.Henry-winner{
+    width: 150px;
+    height: 48px;
+    top: 980px;
+    left: 1150px;
+    opacity: 1; /* Ensure visibility */
+    transform: translate(-50%, -50%); /* Adjust for width and height */
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color:  #ffffff; /* Text color */
+    display: block; /* Each on a new line */
+    margin-top: 10px; /* Space between elements */
+    position: absolute; /* Use absolute positioning for centering */
+    z-index: 2; /* Higher z-index to appear above the image */
+    justify-content: space-between;
+
+}
+
+.testimonial div {
+    text-align: center; /* Center text within the div */
+}
+
+.testimonial-image {
+        width: 160px; /* Set width */
+        height: 160px; /* Set height */
+        object-fit: cover; 
+        margin-top: -30px;
+        opacity: 1; /* Ensure visibility */
+        margin-right: 90%;
+        margin-left: -35px;
+}
+
+.quote {
+    width: 730px;
+    height: 68px;
+     font-size: 20px;
+    font-weight: 300;
+    top: 1203px;
+    line-height: 33.6px;
+   text-align: left;
+    font-style: var(--mainfont); /* Make sure the font is imported */ /* Italicize quote */
+    color: #ffffff; 
+    margin-left: 25%;
+    opacity: 1; /* Ensure visibility */
+    margin-top: -20%;
+    margin-bottom: 50px;
+}
+
+.name {
+    width: 129px;
+height: 34px;
+top: 90px;
+opacity: 1; /* Ensure visibility */
+font-size: 22px;
+font-weight: 700;
+line-height: 33.6px;
+text-align: left;
+    font-weight:  var(--mainfont); /* Make sure the font is imported *//* Bold name */
+    color: #ffffff; 
+    margin-left: 25%;
+    margin-top: -20px;
+    
+   
+}
+
+.weather {
+    width: 165px;
+    height: 34px;
+    top: 1004px;
+    font-size: 18px;
+    font-weight: 280;
+    line-height: 33.6px;
+    text-align: left;
+    font-weight:  var(--mainfont); /* Make sure the font is imported *//* Bold name */
+    color: #ffffff; 
+    opacity: 1; /* Ensure visibility */
+    margin-left: 25%;
+    margin-top: -10px;
+}
+
+.Most{
+    width: 294px;
+    height: 40px;
+    left: 490px;  
+transform: translate(-50%, -50%); /* Adjust for width and height */
+opacity: 1; /* Ensure visibility */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 32px;
+font-weight: 300;
+line-height: 40.22px; /* Adjust line height as needed */
+text-align: center; /* Center text within tutorials  */
+color:#071629; /* Text color */
+margin: 0; /* Remove default margins */
+display: block; /* Each on a new line */
+margin-top: -370px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+
+
+}
+.popular{
+    width: 294px;
+    height: 40px;
+    left: 582px;  
+transform: translate(-50%, -50%); /* Adjust for width and height */
+opacity: 1; /* Ensure visibility */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 32px;
+font-weight: 700;
+line-height: 40.22px; /* Adjust line height as needed */
+text-align: center; /* Center text within tutorials  */
+color:#C271FF; /* Text color */
+margin: 0; /* Remove default margins */
+display: block; /* Each on a new line */
+margin-top: -370px;/* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+
+}
+.tutorialss{
+    width: 294px;
+    height: 40px;
+    left: 697px;  
+transform: translate(-50%, -50%); /* Adjust for width and height */
+opacity: 1; /* Ensure visibility */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 32px;
+font-weight: 300;
+line-height: 40.22px; /* Adjust line height as needed */
+text-align: center; /* Center text within tutorials  */
+color:#071629; /* Text color */
+display: block; /* Each on a new line */
+margin-top: -370px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+
+}
+.Diagonal {
+    position: relative; /* Absolute positioning */
+    width: 255px  ;
+    height: 335px;
+    top: -90px;
+    left: 33px;
+   opacity: 1; /* Set to 1 for visibility */ 
+  object-fit: contain;
+
+}
+.Diagonal-smile{
+    width: 106px;
+    height: 20px;
+    top: 170px;
+    left: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px; /* Adjust line height as needed */
+    text-align: right;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    opacity: 1; /* Ensure visibility */
+    color:#071629; /* Text color */
+    position: absolute; /* Use absolute positioning for centering */
+    display: flex;
+    
+    
+
+}
+.Diagonal-p {
+    width: 242px;
+height: 48px;
+top: 170px;
+left: 20px;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+font-family: var(--mainfont); /* Make sure the font is imported */
+opacity: 1; /* Ensure visibility */
+color: #07162980;/* Text color */
+margin: 0; /* Remove default margins */
+display: flex; /* Each on a new line */
+margin-top: 25px; /* Space between elements */
+position: absolute; /* Use absolute positioning for centering */
+
+
+}
+.Diagonal-play {
+    position: relative; /* Absolute positioning */
+    width: 64px;
+    height: 64px;
+    top: 50px;
+    left: -120px;
+   opacity: 1; /* Set to 1 for visibility */ 
+  object-fit: contain;
+
+}
+.Diagonal-ph {
+    width: 30px;
+height: 30px;
+top: 255px;
+left: 40px;
+position: absolute; /* Absolute positioning */
+opacity: 1; /* Set to 1 for visibility */ 
+  object-fit: contain;
+
+
+}
+.Massey {
+    width: 86px;
+height: 27px;
+top: 260px;
+left: 90px;
+font-size: 14px;
+font-weight: 600;
+line-height: 27px; /* Adjust line height as needed */
+text-align: right;
+font-family: var(--mainfont); /* Make sure the font is imported */
+opacity: 1; /* Ensure visibility */
+color: #C271FF; /* Text color */
+display: flex; /* Each on a new line */
+position: absolute; /* Use absolute positioning for centering */
+
+}
+.rating{
+    width: 107px;
+height: 15px;
+top: 305px;
+left: 13px;
+opacity: 1; /* Ensure visibility */
+object-fit: contain;
+position: absolute; /* Absolute positioning */
+
+
+}
+.min{
+    width: 34px;
+height: 27px;
+top: 300px;
+left: 200px;
+font-size: 14px;
+font-weight: 600;
+line-height: 27px;
+text-align: right;
+font-family: var(--mainfont); /* Make sure the font is imported */
+color: #C271FF; /* Text color */
+opacity: 1; /* Ensure visibility */
+position: absolute; /* Use absolute positioning for centering */
+}
+
+.Happy{
+    position: relative; /* Absolute positioning */
+    width: 255px;
+    height: 154px;
+    top: -2px;
+    left: 32px;
+   opacity: 1; /* Set to 1 for visibility */ 
+  object-fit: contain;
+}
+.Happy-Smile{
+    width: 70px;
+height: 20px;
+top: 172px;
+left: 13px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px; /* Adjust line height as needed */
+    text-align: left;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    opacity: 1; /* Ensure visibility */
+    color:#071629; /* Text color */
+    position:absolute; /* Use absolute positioning for centering */
+    display: flex;
+white-space: nowrap;
+}
+.Happy-p{
+    width: 242px;
+height: 48px;
+top: 170px;
+left: 13px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    opacity: 1; /* Ensure visibility */
+    color: #07162980;/* Text color */
+    margin: 0; /* Remove default margins */
+    display: flex; /* Each on a new line */
+    margin-top: 25px; /* Space between elements */
+    position: absolute; /* Use absolute positioning for centering */
+}
+.Happy-play{
+    position: relative; /* Absolute positioning */
+    width: 64px;
+    height: 64px;
+    top: 50px;
+    left: -120px;
+   opacity: 1; /* Set to 1 for visibility */ 
+  object-fit: contain;
+}
+.Happy-ph{
+    width: 30px;
+    height: 30px;
+    top: 255px;
+    left: 40px;
+    position: absolute; /* Absolute positioning */
+    opacity: 1; /* Set to 1 for visibility */ 
+      object-fit: contain; 
+}
+.Massey-h{
+    width: 86px;
+height: 27px;
+top: 257px;
+left: 90px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 27px; /* Adjust line height as needed */
+    text-align: right;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    opacity: 1; /* Ensure visibility */
+    color: #C271FF; /* Text color */
+    display: flex; /* Each on a new line */
+    position: absolute; /* Use absolute positioning for centering */
+}
+.rating-h{
+    width: 107px;
+    height: 15px;
+    top: 305px;
+    left: 13px;
+    opacity: 1; /* Ensure visibility */
+    object-fit: contain;
+    position: absolute; /* Absolute positioning */ 
+}
+.min-h{
+    width: 34px;
+    height: 27px;
+    top: 300px;
+    left: 200px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: right;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    color: #C271FF; /* Text color */
+    opacity: 1; /* Ensure visibility */
+    position: absolute; /* Use absolute positioning for centering */
+}
+.Natural{
+    position: relative; /* Absolute positioning */
+    width: 255px;
+    height: 154px;
+    top: -3px;
+    left: 32px;
+   opacity: 1; /* Set to 1 for visibility */ 
+  object-fit: contain;
+}
+.Natural-Smile{
+    width: 97px;
+height: 20px;
+top: 172px;
+left: 13px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20.11px; /* Adjust line height as needed */
+        text-align: left;
+        font-family: var(--mainfont); /* Make sure the font is imported */
+        opacity: 1; /* Ensure visibility */
+        color:#071629; /* Text color */
+        position:absolute; /* Use absolute positioning for centering */
+        display: flex;
+    white-space: nowrap;
+}
+.Natural-p{
+    width: 242px;
+height: 48px;
+top: 170px;
+left: 13px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        font-family: var(--mainfont); /* Make sure the font is imported */
+        opacity: 1; /* Ensure visibility */
+        color: #07162980;/* Text color */
+        margin: 0; /* Remove default margins */
+        display: flex; /* Each on a new line */
+        margin-top: 25px; /* Space between elements */
+        position: absolute; /* Use absolute positioning for centering */
+}
+.Natural-play{
+    position: relative; /* Absolute positioning */
+    width: 64px;
+    height: 64px;
+    top: 50px;
+    left: -120px;
+   opacity: 1; /* Set to 1 for visibility */ 
+  object-fit: contain;
+
+}
+.Natural-ph{
+    width: 30px;
+    height: 30px;
+    top: 255px;
+    left: 40px;
+    position: absolute; /* Absolute positioning */
+    opacity: 1; /* Set to 1 for visibility */ 
+      object-fit: contain; 
+}
+.Massey-n{
+    width: 86px;
+height: 27px;
+top: 257px;
+left: 90px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 27px; /* Adjust line height as needed */
+    text-align: right;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    opacity: 1; /* Ensure visibility */
+    color: #C271FF; /* Text color */
+    display: flex; /* Each on a new line */
+    position: absolute; /* Use absolute positioning for centering */
+}
+.rating-n{
+    width: 107px;
+    height: 15px;
+    top: 300px;
+    left: 13px;
+    opacity: 1; /* Ensure visibility */
+    object-fit: contain;
+    position: absolute; /* Absolute positioning */ 
+}
+.min-n{
+    width: 34px;
+    height: 27px;
+    top: 300px;
+    left: 200px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: right;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    color: #C271FF; /* Text color */
+    opacity: 1; /* Ensure visibility */
+    position: absolute; /* Use absolute positioning for centering */  
+}
+.Sad{
+position: relative; /* Absolute positioning */
+width: 255px;
+height: 154px;
+top: -3px;
+left: 32px;
+opacity: 1; /* Set to 1 for visibility */ 
+object-fit: contain;
+}
+.sad-smile{
+    width: 97px;
+height: 20px;
+top: 172px;
+left: 13px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20.11px; /* Adjust line height as needed */
+        text-align: left;
+        font-family: var(--mainfont); /* Make sure the font is imported */
+        opacity: 1; /* Ensure visibility */
+        color:#071629; /* Text color */
+        position:absolute; /* Use absolute positioning for centering */
+        display: flex;
+    white-space: nowrap;
+}
+.sad-p{
+    width: 242px;
+    height: 48px;
+    top: 170px;
+    left: 13px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            font-family: var(--mainfont); /* Make sure the font is imported */
+            opacity: 1; /* Ensure visibility */
+            color: #07162980;/* Text color */
+            margin: 0; /* Remove default margins */
+            display: flex; /* Each on a new line */
+            margin-top: 25px; /* Space between elements */
+            position: absolute; /* Use absolute positioning for centering */
+}
+.sad-play{
+    position: relative; /* Absolute positioning */
+    width: 64px;
+    height: 64px;
+    top: 50px;
+    left: -120px;
+   opacity: 1; /* Set to 1 for visibility */ 
+  object-fit: contain; 
+}
+.sad-ph{
+    width: 30px;
+    height: 30px;
+    top: 255px;
+    left: 40px;
+    position: absolute; /* Absolute positioning */
+    opacity: 1; /* Set to 1 for visibility */ 
+      object-fit: contain; 
+}
+.Massey-s{
+    width: 86px;
+    height: 27px;
+    top: 257px;
+    left: 90px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 27px; /* Adjust line height as needed */
+        text-align: right;
+        font-family: var(--mainfont); /* Make sure the font is imported */
+        opacity: 1; /* Ensure visibility */
+        color: #C271FF; /* Text color */
+        display: flex; /* Each on a new line */
+        position: absolute; /* Use absolute positioning for centering */
+}
+.rating-s{
+    width: 107px;
+    height: 15px;
+    top: 300px;
+    left: 13px;
+    opacity: 1; /* Ensure visibility */
+    object-fit: contain;
+    position: absolute; /* Absolute positioning */ 
+}
+.min-s{
+    width: 34px;
+    height: 27px;
+    top: 300px;
+    left: 200px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: right;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    color: #C271FF; /* Text color */
+    opacity: 1; /* Ensure visibility */
+    position: absolute; /* Use absolute positioning for centering */  
+}
+.free{
+    width: 234px;
+height: 40px;
+top:35px;
+left: 617px;
+transform: translate(-50%, -50%); /* Adjust for width and height */
+opacity: 1; /* Ensure visibility */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 32px;
+font-weight: 700;
+line-height: 40.22px; /* Adjust line height as needed */
+text-align: center; /* Center text within tutorials  */
+color:  #C271FF;/* Text color */
+display: block; /* Each on a new line */
+position: absolute; /* Use absolute positioning for centering */
+
+}
+.member{
+    width: 234px;
+height: 40px;
+top:35px;
+left: 740px;
+transform: translate(-50%, -50%); /* Adjust for width and height */
+opacity: 1; /* Ensure visibility */
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 32px;
+font-weight: 300;
+line-height: 40.22px; /* Adjust line height as needed */
+text-align: center; /* Center text within tutorials  */
+color:  #ffffff;/* Text color */
+display: block; /* Each on a new line */
+position: absolute; /* Use absolute positioning for centering */
+}
+.smile1{
+    width: 43.67px;
+height: 35.35px;
+top: 20px;
+left: 106.71px;
+position: absolute; /* Absolute positioning */
+    opacity: 1; /* Set to 1 for visibility */ 
+      object-fit: contain; 
+
+}
+.smileh1{
+    width: 256px;
+height: 26px;
+top: 62px;
+left: 0.5px;
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 18px;
+font-weight: 600;
+line-height: 26px;
+text-align: center;
+opacity: 1; /* Ensure visibility */
+color:#ffffff; /* Text color */
+position:absolute; /* Use absolute positioning for centering */
+display: flex;
+white-space: nowrap;
+justify-content: center; /* Center content vertically */
+}
+.smilep1{
+    width: 212px;
+height: 52px;
+top: 90px;
+left: 22.5px;
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 14px;
+font-weight: 400;
+line-height: 26px;
+text-align: center;
+opacity: 1; /* Ensure visibility */
+color:#ffffff; /* Text color */
+position:absolute; /* Use absolute positioning for centering */
+display: flex;
+white-space: wrap;
+justify-content: center; /* Center content vertically */
+
+}
+.smile2{
+    width: 43.67px;
+    height: 35.35px;
+    top: 20px;
+    left: 106.71px;
+    position: absolute; /* Absolute positioning */
+        opacity: 1; /* Set to 1 for visibility */ 
+          object-fit: contain; 
+}
+.smileh2{
+    width: 256px;
+    height: 26px;
+    top: 62px;
+    left: 0.5px;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    opacity: 1; /* Ensure visibility */
+    color:#ffffff; /* Text color */
+    position:absolute; /* Use absolute positioning for centering */
+    display: flex;
+    white-space: nowrap;
+    justify-content: center; /* Center content vertically */
+}
+.smilep2{
+    width: 212px;
+    height: 52px;
+    top: 90px;
+    left: 22.5px;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    opacity: 1; /* Ensure visibility */
+    color:#ffffff; /* Text color */
+    position:absolute; /* Use absolute positioning for centering */
+    display: flex;
+    white-space: wrap;
+    justify-content: center; /* Center content vertically */
+}
+.smile3{
+    width: 43.67px;
+    height: 35.35px;
+    top: 20px;
+    left: 106.71px;
+    position: absolute; /* Absolute positioning */
+        opacity: 1; /* Set to 1 for visibility */ 
+          object-fit: contain; 
+}
+.smileh3{
+    width: 256px;
+    height: 26px;
+    top: 62px;
+    left: 0.5px;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    opacity: 1; /* Ensure visibility */
+    color:#ffffff; /* Text color */
+    position:absolute; /* Use absolute positioning for centering */
+    display: flex;
+    white-space: nowrap;
+    justify-content: center; /* Center content vertically */
+}
+.smilep3{
+    width: 212px;
+    height: 52px;
+    top: 90px;
+    left: 22.5px;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    opacity: 1; /* Ensure visibility */
+    color:#ffffff; /* Text color */
+    position:absolute; /* Use absolute positioning for centering */
+    display: flex;
+    white-space: wrap;
+    justify-content: center; /* Center content vertically */   
+}
+.smile4{
+    width: 43.67px;
+    height: 35.35px;
+    top: 20px;
+    left: 106.71px;
+    position: absolute; /* Absolute positioning */
+        opacity: 1; /* Set to 1 for visibility */ 
+          object-fit: contain; 
+}
+.smileh4{
+    width: 256px;
+    height: 26px;
+    top: 62px;
+    left: 0.5px;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    opacity: 1; /* Ensure visibility */
+    color:#ffffff; /* Text color */
+    position:absolute; /* Use absolute positioning for centering */
+    display: flex;
+    white-space: nowrap;
+    justify-content: center; /* Center content vertically */
+}
+.smilep4{
+    width: 212px;
+    height: 52px;
+    top: 90px;
+    left: 22.5px;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    opacity: 1; /* Ensure visibility */
+    color:#ffffff; /* Text color */
+    position:absolute; /* Use absolute positioning for centering */
+    display: flex;
+    white-space: wrap;
+    justify-content: center; /* Center content vertically */   
+}
+.F{
+    width: 136px;
+height: 75px;
+left: 460px;
+top: 90px;
+font-size: 60px;
+font-weight: 200;
+line-height: 75.42px;/* Adjust line height as needed */
+text-align: center;
+color: #071629; /* Text color */
+transform: translate(-50%, -50%); /* Adjust for width and height */
+opacity: 1; /* Ensure visibility */
+font-family: var(--mainfont); /* Make sure the font is imported */
+display: block; /* Each on a new line */
+position: absolute; /* Use absolute positioning for centering */
+
+}
+.fh1{
+    width: 145px;
+height: 20px;
+left: 10px;
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 16px;
+font-weight: 700;
+line-height: 20.11px;
+text-align: left;
+color: #071629;
+white-space: nowrap;
+position: absolute; /* Use absolute positioning for centering */
+opacity: 1; /* Ensure visibility */
+
+
+}
+.fp1{
+    width: 350px;
+height: 192px;
+top: 50px;
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+color: #07162980;
+position:absolute; /* Use absolute positioning for centering */
+    display: flex;
+    white-space: wrap;
+    justify-content: center; /* Center content vertically */   
+    opacity: 1; /* Ensure visibility */
+
+
+}
+.fh2{
+    width: 145px;
+height: 20px;
+left: 10px;
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 16px;
+font-weight: 700;
+line-height: 20.11px;
+text-align: left;
+color: #071629;
+white-space: nowrap;
+position: absolute; /* Use absolute positioning for centering */
+opacity: 1; /* Ensure visibility */
+}
+.fp2{
+    width: 350px;
+    height: 192px;
+    top: 50px;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #07162980;
+    position:absolute; /* Use absolute positioning for centering */
+        display: flex;
+        white-space: wrap;
+        justify-content: center; /* Center content vertically */   
+        opacity: 1; /* Ensure visibility */
+}
+.fh3{
+    width: 145px;
+height: 20px;
+left: 10px;
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 16px;
+font-weight: 700;
+line-height: 20.11px;
+text-align: left;
+color: #071629;
+white-space: nowrap;
+position: absolute; /* Use absolute positioning for centering */
+opacity: 1; /* Ensure visibility */
+
+}
+.fp3{
+    width: 350px;
+height: 192px;
+top: 50px;
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+color: #07162980;
+position:relative; /* Use absolute positioning for centering */
+    display: flex;
+    white-space: wrap;
+    justify-content: center; /* Center content vertically */   
+    opacity: 1; /* Ensure visibility */
+
+}
+.fh4{
+    width: 145px;
+    height: 20px;
+    left: 10px;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px;
+    text-align: left;
+    color: #071629;
+    white-space: nowrap;
+    position: absolute; /* Use absolute positioning for centering */
+    opacity: 1; /* Ensure visibility */
+}
+.fp4{
+    width: 350px;
+    height: 192px;
+    top: 50px;
+    font-family: var(--mainfont); /* Make sure the font is imported */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #07162980;
+    position:relative; /* Use absolute positioning for centering */
+        display: flex;
+        white-space: wrap;
+        justify-content: center; /* Center content vertically */   
+        opacity: 1; /* Ensure visibility */
+}
+.logo-bottom{
+    width: 167.02px;
+height: 29.46px;
+top: 100.02px;
+left: 90px;
+justify-content: left;
+position: absolute; /* Absolute positioning */
+        opacity: 1; /* Set to 1 for visibility */ 
+          object-fit: contain; 
+}
+.footerp{
+    width: 96px;
+height: 15px;
+top: 195px;
+left: 672px;
+font-family: var(--mainfont); /* Make sure the font is imported */
+font-size: 12px;
+font-weight: 200;
+line-height: 15.08px;
+color: #FFFFFF;/* Text color Hex*/
+opacity: 0.35px;/* Set to 0.35 for visibility */ 
+justify-content: center; /* Center content horizontally */   
+align-items: center; /* Center content horizontally */
+margin-bottom: -140px;
+
+}
