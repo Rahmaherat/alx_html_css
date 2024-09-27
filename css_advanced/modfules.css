@@ -1,0 +1,59 @@
+.mainbtn {
+    width: 162px; /* Fixed width */
+    height: 44px; /* Fixed height */
+    opacity: 1; /* Ensure visibility */
+    background-color: var(--maincolor); /* Background color */
+    box-shadow: 0px 2px 20px 0px #00000080; /* Ensure hex and Drop shadow*/
+
+    font-family: var(--mainfont); /* Ensure the font is imported */
+    color: var(--textcolor); /* Text color */
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.6px;
+    text-align: center; /* Center text */
+    border-radius: 40px; /* Rounded corners */
+
+    /* Positioning for Overlay */
+    position: absolute; /* Absolute positioning for overlay effect */
+    top: 40%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to be centered */
+    z-index: 10; /* Ensure it sits above other elements */
+}
+
+
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+
+}
+.mainbtn-bottom{
+    width: 162px;
+height: 44px;
+top: 206px;
+left: 639px;
+    opacity: 1; /* Ensure visibility */
+    background-color: var(--maincolor); /* Background color */
+    box-shadow: 0px 2px 20px 0px #00000080; /* Ensure hex and Drop shadow*/
+
+    font-family: var(--mainfont); /* Ensure the font is imported */
+    color: var(--textcolor); /* Text color */
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.6px;
+    text-align: center; /* Center text */
+    border-radius: 40px; /* Rounded corners */
+
+    /* Positioning for Overlay */
+    position: absolute; /* Absolute positioning for overlay effect */
+    top: 87%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to be centered */
+    z-index: 10; /* Ensure it sits above other elements */
+}
