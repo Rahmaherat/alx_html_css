@@ -1,0 +1,252 @@
+:root {
+    --maincolor: #C271FF;
+    --darkcolor: #071629;
+    --textcolor: #FFFFFF;
+    --wightcolor: #C271FF;
+    --mainfont:  'Source Sans Pro', sans-serif;
+
+    ;
+    --
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--mainfont)
+
+}
+a {
+    text-decoration: none;
+    
+                                                
+}
+.start{
+    width: 1440px;
+    margin: auto;
+    height: 1093px;
+    gap: 0px;
+    opacity: 1; /* Ensure visibility */
+    position: absolute; /* Use absolute positioning for centering */
+    z-index: 2; /* Higher z-index to appear above the image */
+  
+
+
+}
+.testimonial{
+    width: 1440px; /* Fixed width */
+    height: 298px; /* Fixed height */
+    top: 1093px;
+    background-color: #C271FF; /* Background color */
+    opacity: 1; /* Ensure visibility */
+    position: relative; /* Positioning context for children */
+    display: inline-flex; /* Enable flexbox */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    flex-wrap: wrap;
+
+
+}
+.tutorials{
+    width: 1228px;
+    height: 450px;
+   top: 1572px;
+   left: 106px;
+   position: absolute; /* Use absolute positioning for centering */
+   display: flex; /* Enable flexbox */
+   justify-content: center; /* Center content vertically */
+   align-items: center; /* Center content vertically */
+
+}
+
+.content{
+    width: 255px;
+height: 335px;
+top: 70px;
+left: 58px;
+display: flex; /* Enable flexbox */
+flex-wrap:nowrap;
+   justify-content: center; /* Center content vertically */
+   position: absolute; /* Use absolute positioning for centering */
+
+
+
+
+}
+.content-happy{
+    width: 255px;
+height: 335px;
+top: -1px;
+left: 280px;
+display: flex; /* Enable flexbox */
+flex-wrap:nowrap;
+   justify-content: center; /* Center content vertically */
+   position: absolute; /* Use absolute positioning for centering */
+}
+.content-natural {
+    width: 255px;
+    height: 335px;
+    top: -1px;
+    left: 570px;
+    display: flex; /* Enable flexbox */
+    flex-wrap:nowrap;
+       justify-content: center; /* Center content vertically */
+       position: absolute; /* Use absolute positioning for centering */
+}
+.content-sad{
+    width: 255px;
+    height: 335px;
+    top: -1px;
+    left: 850px;
+    display: flex; /* Enable flexbox */
+    flex-wrap:nowrap;
+       justify-content: center; /* Center content vertically */
+       position: absolute; /* Use absolute positioning for centering */
+}
+.membership{
+    width: 1440px; /* Fixed width */
+height: 502px;/* Fixed height */
+top: 2200px;
+background: #071629;/* Background color */
+opacity: 1; /* Ensure visibility */
+position: absolute; /* Positioning context for children */
+display: flex; /* Enable flexbox */
+justify-content: center; /* Center content vertically */
+align-items: center; /* Center content horizontally */
+flex-wrap: nowrap;
+}
+.membership-item1{
+    width: 257px;
+height: 153px;
+top: 168px;
+left: 164px;
+    display: flex; /* Enable flexbox */
+    flex-wrap:nowrap;
+    justify-content: center; /* Center content vertically */
+    position: absolute; /* Use absolute positioning for centering */
+
+
+}
+.membership-item2{
+    width: 257px;
+height: 153px;
+top: 168px;
+left: 448px;
+    display: flex; /* Enable flexbox */
+    flex-wrap:nowrap;
+    justify-content: center; /* Center content vertically */
+    position: absolute; /* Use absolute positioning for centering */
+
+}
+.membership-item3{
+    width: 257px;
+height: 153px;
+top: 168px;
+left: 733px;
+    display: flex; /* Enable flexbox */
+    flex-wrap:nowrap;
+    justify-content: center; /* Center content vertically */
+    position: absolute; /* Use absolute positioning for centering */
+
+
+}
+.membership-item4{
+    width: 257px;
+height: 153px;
+top: 168px;
+left: 1019px;
+    display: flex; /* Enable flexbox */
+    flex-wrap:nowrap;
+    justify-content: center; /* Center content vertically */
+    position: absolute; /* Use absolute positioning for centering */
+
+
+}
+.faq{
+    width: 920px;
+height: 707px;
+top: 2778px;
+left: 249px;
+position: absolute; /* Use absolute positioning for centering */
+   display: flex; /* Enable flexbox */
+   justify-content: center; /* Center content vertically */
+   align-items: center; /* Center content vertically */
+
+
+}
+.faq-item1{
+    width: 350px;
+height: 242px;
+top: 149px;
+left: 10px;
+display: flex; /* Enable flexbox */
+    flex-wrap:wrap;
+    justify-content: center; /* Center content vertically */
+    position: absolute; /* Use absolute positioning for centering */
+
+
+}
+.faq-item2{
+    width: 350px;
+height: 242px;
+top: 465px;
+left: 10px;
+display: flex; /* Enable flexbox */
+    flex-wrap:wrap;
+    justify-content: center; /* Center content vertically */
+    position: absolute; /* Use absolute positioning for centering */
+
+}
+.faq-item3{
+    width: 350px;
+height: 242px;
+top: 149px;
+left: 570px;
+display: flex; /* Enable flexbox */
+    flex-wrap:wrap;
+    justify-content: center; /* Center content vertically */
+    position: absolute; /* Use absolute positioning for centering */
+}
+.faq-item4{
+    width: 350px;
+height: 242px;
+top: 465px;
+left: 570px;
+display: flex; /* Enable flexbox */
+    flex-wrap:wrap;
+    justify-content: center; /* Center content vertically */
+    position: absolute; /* Use absolute positioning for centering */
+
+
+}
+.footer-content{
+    width: 1440px; /* Fixed width */
+height: 249px;/* Fixed height */
+top: 3669px;
+background: #071629;/* Background color */
+position: absolute; /* Positioning context for children */
+display: flex; /* Enable flexbox */
+justify-content: center; /* Center content vertically */   
+align-items: center; /* Center content horizontally */
+flex-wrap: nowrap;
+
+}
+.social-icons{
+    width: 130px;
+height: 30px;
+top: 90px;
+left: 1070px;
+display: flex;
+align-items: right;
+justify-content: space-between;
+flex-wrap: nowrap;
+color: #FFFFFF;
+position: absolute; /* Absolute positioning */
+        opacity: 1; /* Set to 1 for visibility */ 
+          object-fit: contain; 
+
+
+}
